@@ -2,6 +2,8 @@ import os
 import cv2
 import xml.etree.ElementTree as ET
 import numpy as np
+import re
+
 def get_data(input_path):
 	all_imgs = []
 
@@ -19,7 +21,7 @@ def get_data(input_path):
 	for data_path in data_paths:
 
 		annot_path = os.path.join(data_path, 'Annotations')
-		imgs_path = os.path.join(data_path, 'JPEGImages')
+		imgs_path = os.path.join(data_path, 'PNGImages')
 		imgsets_path_trainval = os.path.join(data_path, 'ImageSets','Main','trainval.txt')
 		imgsets_path_test = os.path.join(data_path, 'ImageSets','Main','test.txt')
 
@@ -28,10 +30,10 @@ def get_data(input_path):
 		try:
 			with open(imgsets_path_trainval) as f:
 				for line in f:
-					trainval_files.append(line.strip() + '.jpg')
+					trainval_files.append(line.strip() + '.png')
 			with open(imgsets_path_test) as f:
 				for line in f:
-					test_files.append(line.strip() + '.jpg')
+					test_files.append(line.strip() + '.png')
 		except Exception as e:
 			print(e)
 		
@@ -63,6 +65,8 @@ def get_data(input_path):
 
 				for element_obj in element_objs:
 					class_name = element_obj.find('name').text
+					class_name = re.sub('\t', "", class_name)
+					class_name = re.sub('\n', "", class_name)
 					if class_name not in classes_count:
 						classes_count[class_name] = 1
 					else:
