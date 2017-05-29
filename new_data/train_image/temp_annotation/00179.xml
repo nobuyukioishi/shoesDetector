@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <annotation>
 	<folder>train_image</folder>
-	<filename>00176</filename>
-	<path>/Users/oishi/Project/shoeDetector/new_data/train_image/00176.png</path>
+	<filename>00179</filename>
+	<path>/Users/oishi/Project/shoeDetector/new_data/train_image/00179.png</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -18,10 +18,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>135</xmin>
-			<ymin>126</ymin>
-			<xmax>206</xmax>
-			<ymax>156</ymax>
+			<xmin>120</xmin>
+			<ymin>123</ymin>
+			<xmax>193</xmax>
+			<ymax>158</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -30,10 +30,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>211</xmin>
-			<ymin>121</ymin>
-			<xmax>283</xmax>
-			<ymax>151</ymax>
+			<xmin>178</xmin>
+			<ymin>211</ymin>
+			<xmax>251</xmax>
+			<ymax>247</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -42,10 +42,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>212</xmin>
-			<ymin>147</ymin>
-			<xmax>283</xmax>
-			<ymax>177</ymax>
+			<xmin>269</xmin>
+			<ymin>232</ymin>
+			<xmax>342</xmax>
+			<ymax>267</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -54,10 +54,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>139</xmin>
-			<ymin>147</ymin>
-			<xmax>211</xmax>
-			<ymax>178</ymax>
+			<xmin>273</xmin>
+			<ymin>141</ymin>
+			<xmax>346</xmax>
+			<ymax>176</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -66,10 +66,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>164</xmin>
-			<ymin>257</ymin>
-			<xmax>235</xmax>
-			<ymax>287</ymax>
+			<xmin>524</xmin>
+			<ymin>218</ymin>
+			<xmax>597</xmax>
+			<ymax>253</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -78,10 +78,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>163</xmin>
-			<ymin>282</ymin>
-			<xmax>234</xmax>
-			<ymax>312</ymax>
+			<xmin>232</xmin>
+			<ymin>60</ymin>
+			<xmax>305</xmax>
+			<ymax>95</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -90,10 +90,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>242</xmin>
-			<ymin>262</ymin>
-			<xmax>314</xmax>
-			<ymax>292</ymax>
+			<xmin>195</xmin>
+			<ymin>103</ymin>
+			<xmax>260</xmax>
+			<ymax>157</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -102,10 +102,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>243</xmin>
-			<ymin>289</ymin>
-			<xmax>314</xmax>
-			<ymax>319</ymax>
+			<xmin>135</xmin>
+			<ymin>84</ymin>
+			<xmax>199</xmax>
+			<ymax>138</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -114,10 +114,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>510</xmin>
-			<ymin>126</ymin>
-			<xmax>581</xmax>
-			<ymax>156</ymax>
+			<xmin>211</xmin>
+			<ymin>77</ymin>
+			<xmax>268</xmax>
+			<ymax>138</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -126,10 +126,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>510</xmin>
-			<ymin>152</ymin>
-			<xmax>581</xmax>
-			<ymax>182</ymax>
+			<xmin>290</xmin>
+			<ymin>102</ymin>
+			<xmax>354</xmax>
+			<ymax>154</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -138,10 +138,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>510</xmin>
-			<ymin>187</ymin>
-			<xmax>581</xmax>
-			<ymax>217</ymax>
+			<xmin>428</xmin>
+			<ymin>111</ymin>
+			<xmax>491</xmax>
+			<ymax>157</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -150,10 +150,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>509</xmin>
-			<ymin>212</ymin>
-			<xmax>581</xmax>
-			<ymax>242</ymax>
+			<xmin>429</xmin>
+			<ymin>87</ymin>
+			<xmax>497</xmax>
+			<ymax>128</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -162,10 +162,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>503</xmin>
-			<ymin>238</ymin>
-			<xmax>576</xmax>
-			<ymax>271</ymax>
+			<xmin>515</xmin>
+			<ymin>109</ymin>
+			<xmax>574</xmax>
+			<ymax>155</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -174,10 +174,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>507</xmin>
-			<ymin>260</ymin>
-			<xmax>575</xmax>
-			<ymax>300</ymax>
+			<xmin>511</xmin>
+			<ymin>73</ymin>
+			<xmax>571</xmax>
+			<ymax>121</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>474</xmin>
+			<ymin>159</ymin>
+			<xmax>545</xmax>
+			<ymax>208</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -186,10 +198,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>439</xmin>
-			<ymin>190</ymin>
-			<xmax>508</xmax>
-			<ymax>225</ymax>
+			<xmin>471</xmin>
+			<ymin>188</ymin>
+			<xmax>534</xmax>
+			<ymax>238</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -198,10 +210,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>439</xmin>
-			<ymin>219</ymin>
-			<xmax>508</xmax>
-			<ymax>253</ymax>
+			<xmin>437</xmin>
+			<ymin>272</ymin>
+			<xmax>488</xmax>
+			<ymax>335</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -210,10 +222,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>435</xmin>
-			<ymin>263</ymin>
-			<xmax>504</xmax>
-			<ymax>298</ymax>
+			<xmin>448</xmin>
+			<ymin>260</ymin>
+			<xmax>518</xmax>
+			<ymax>310</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -222,10 +234,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>442</xmin>
-			<ymin>284</ymin>
-			<xmax>511</xmax>
-			<ymax>319</ymax>
+			<xmin>395</xmin>
+			<ymin>211</ymin>
+			<xmax>462</xmax>
+			<ymax>256</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -234,70 +246,46 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>508</xmin>
-			<ymin>295</ymin>
-			<xmax>577</xmax>
-			<ymax>330</ymax>
+			<xmin>395</xmin>
+			<ymin>175</ymin>
+			<xmax>465</xmax>
+			<ymax>217</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
+		<name>Copy of Copy of Copy of Copy of Copy of shoe</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>506</xmin>
-			<ymin>327</ymin>
-			<xmax>575</xmax>
-			<ymax>361</ymax>
+			<xmin>521</xmin>
+			<ymin>242</ymin>
+			<xmax>580</xmax>
+			<ymax>297</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
+		<name>Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>249</xmin>
-			<ymin>176</ymin>
-			<xmax>318</xmax>
-			<ymax>210</ymax>
+			<xmin>248</xmin>
+			<ymin>7</ymin>
+			<xmax>313</xmax>
+			<ymax>67</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
+		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>259</xmin>
-			<ymin>199</ymin>
-			<xmax>328</xmax>
-			<ymax>234</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>201</xmin>
-			<ymin>180</ymin>
-			<xmax>265</xmax>
-			<ymax>224</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of Copy of shoe</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>197</xmin>
-			<ymin>207</ymin>
-			<xmax>261</xmax>
-			<ymax>251</ymax>
+			<xmin>279</xmin>
+			<ymin>191</ymin>
+			<xmax>344</xmax>
+			<ymax>243</ymax>
 		</bndbox>
 	</object>
 </annotation>
