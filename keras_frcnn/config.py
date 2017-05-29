@@ -26,7 +26,7 @@ class Config:
 		self.img_scaling_factor = 1.0
 
 		# number of ROIs at once
-		self.num_rois = 4
+		self.num_rois = 2
 
 		# stride at the RPN (this depends on the network configuration)
 		self.rpn_stride = 16

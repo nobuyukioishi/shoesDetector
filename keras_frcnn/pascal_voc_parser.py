@@ -37,6 +37,8 @@ def get_data(input_path):
 		except Exception as e:
 			print(e)
 		
+		print "trainval_files:", trainval_files
+		print "test_files:", test_files
 
 		annots = [os.path.join(annot_path, s) for s in os.listdir(annot_path)]
 		idx = 0
@@ -49,9 +51,15 @@ def get_data(input_path):
 
 				element_objs = element.findall('object')
 				element_filename = element.find('filename').text
+				element_filename = re.sub('\t', "", element_filename)
+				element_filename = re.sub('\n', "", element_filename)
+				element_filename = re.sub(' ', "",  element_filename)
+				element_filename = element_filename+".png"
 				element_width = int(element.find('size').find('width').text)
 				element_height = int(element.find('size').find('height').text)
-
+				print element_filename
+				print element_width
+				print element_height
 				if len(element_objs) > 0:
 					annotation_data = {'filepath': os.path.join(imgs_path, element_filename), 'width': element_width,
 									   'height': element_height, 'bboxes': []}
@@ -67,6 +75,7 @@ def get_data(input_path):
 					class_name = element_obj.find('name').text
 					class_name = re.sub('\t', "", class_name)
 					class_name = re.sub('\n', "", class_name)
+					class_name = re.sub(' ', "",  class_name)
 					if class_name not in classes_count:
 						classes_count[class_name] = 1
 					else:
