@@ -73,6 +73,7 @@ def get_data(input_path):
 
 				for element_obj in element_objs:
 					class_name = element_obj.find('name').text
+					class_name = re.sub('Copy of ', "", class_name)			
 					class_name = re.sub('\t', "", class_name)
 					class_name = re.sub('\n', "", class_name)
 					class_name = re.sub(' ', "",  class_name)
