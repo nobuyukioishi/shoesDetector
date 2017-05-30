@@ -133,7 +133,7 @@ model_rpn.compile(optimizer=optimizer, loss=[losses.rpn_loss_cls(num_anchors), l
 model_classifier.compile(optimizer=optimizer_classifier, loss=[losses.class_loss_cls, losses.class_loss_regr(len(classes_count)-1)], metrics={'dense_class_{}'.format(len(classes_count)): 'accuracy'})
 model_all.compile(optimizer='sgd', loss='mae')
 
-epoch_length = 100
+epoch_length = 50
 num_epochs = int(options.num_epochs)
 iter_num = 0
 epoch_num = 0
@@ -151,8 +151,9 @@ print('Starting training')
 count = 0
 while True:
 	try:
+		if count % 100 == 0:
+			print('{} times'.format(count))
 		count += 1
-		print('{} times'.format(count))
 		if len(rpn_accuracy_rpn_monitor) == epoch_length and C.verbose:
 			mean_overlapping_bboxes = float(sum(rpn_accuracy_rpn_monitor))/len(rpn_accuracy_rpn_monitor)
 			rpn_accuracy_rpn_monitor = []
