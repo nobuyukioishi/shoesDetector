@@ -24,7 +24,7 @@ parser.add_option("--config_filename", dest="config_filename", help=
 				default="config.pickle")
 
 (options, args) = parser.parse_args()
-
+print((options, args))
 if not options.test_path:   # if filename is not given
 	parser.error('Error: path to test data must be specified. Pass --path to command line')
 
