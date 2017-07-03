@@ -23,6 +23,7 @@ parser.add_option("--config_filename", dest="config_filename", help=
 				"Location to read the metadata related to the training (generated when training).",
 				default="config.pickle")
 
+
 (options, args) = parser.parse_args()
 print((options, args))
 if not options.test_path:   # if filename is not given
@@ -72,8 +73,13 @@ if 'bg' not in class_mapping:
 	class_mapping['bg'] = len(class_mapping)
 
 class_mapping = {v: k for k, v in class_mapping.iteritems()}
+print "Class_mapping="
 print(class_mapping)
-class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
+
+colors = [(255,255,255),(255,0,0),(0,0,255),(0,0,255)]
+class_to_color = {class_mapping[v]: colors[index] for index, v in enumerate(class_mapping)}
+# class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
+
 C.num_rois = int(options.num_rois)
 
 if K.image_dim_ordering() == 'th':
@@ -141,7 +147,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 	[Y1, Y2, F] = model_rpn.predict(X)
 	
 
-	R = roi_helpers.rpn_to_roi(Y1, Y2, C, K.image_dim_ordering(), overlap_thresh=0.7)
+	R = roi_helpers.rpn_to_roi(Y1, Y2, C, K.image_dim_ordering(), overlap_thresh=0.9)
 
 	# convert from (x1,y1,x2,y2) to (x,y,w,h)
 	R[:, 2] -= R[:, 0]
@@ -194,10 +200,13 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 			probs[cls_name].append(np.max(P_cls[0, ii, :]))
 
 	all_dets = []
+	count = {'sandal' : 0,'slipper' : 0,'shoe' : 0,}
 
 	for key in bboxes:
+		print "key="
+		print key
 		bbox = np.array(bboxes[key])
-
+		count[key] = 0
 		new_boxes, new_probs = roi_helpers.non_max_suppression_fast(bbox, np.array(probs[key]), overlap_thresh=0.5)
 		for jk in range(new_boxes.shape[0]):
 			(x1, y1, x2, y2) = new_boxes[jk,:]
@@ -209,10 +218,27 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 
 			(retval,baseLine) = cv2.getTextSize(textLabel,cv2.FONT_HERSHEY_COMPLEX,1,1)
 			textOrg = (x1, y1-0)
+			count[key] += 1
 
 			# cv2.rectangle(img_scaled, (textOrg[0] - 5, textOrg[1]+baseLine - 5), (textOrg[0]+retval[0] + 5, textOrg[1]-retval[1] - 5), (0, 0, 0), 2)
 			# cv2.rectangle(img_scaled, (textOrg[0] - 5,textOrg[1]+baseLine - 5), (textOrg[0]+retval[0] + 5, textOrg[1]-retval[1] - 5), (255, 255, 255), -1)
 			# cv2.putText(img_scaled, textLabel, textOrg, cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
+	print count
+
+	# put shoe Count label
+	shoeCountPosition = [50, 50]
+	# for key in count:
+	# 	print key
+	# 	print count[key]
+
+	for key in count:
+		shoeCount = str(key) + " : " + str(count[key])
+		(retval,baseLine) = cv2.getTextSize(shoeCount, cv2.FONT_HERSHEY_COMPLEX,1,1)        
+		cv2.rectangle(img_scaled, (shoeCountPosition[0] - 5, shoeCountPosition[1]+baseLine - 5), (shoeCountPosition[0]+retval[0] + 5, shoeCountPosition[1]-retval[1] - 5), (0, 0, 0), 2)
+		cv2.rectangle(img_scaled, (shoeCountPosition[0] - 5,shoeCountPosition[1]+baseLine - 5), (shoeCountPosition[0]+retval[0] + 5, shoeCountPosition[1]-retval[1] - 5), (255, 255, 255), -1)
+		cv2.putText(img_scaled, shoeCount, tuple(shoeCountPosition), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
+		shoeCountPosition[1] += 40
+
 	print('Elapsed time = {}'.format(time.time() - st))
 	# cv2.imshow('img', img_scaled) # 'cause Gtk-WARNING **: cannot open display;
 	# cv2.waitKey(0)

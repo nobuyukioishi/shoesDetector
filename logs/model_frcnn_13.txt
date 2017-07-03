@@ -1,0 +1,2946 @@
+start time: 2017-07-02 03:00:00.107438
+Parsing annotation files
+Training images per class:
+{'bg': 0, 'sandal': 1341, 'shoe': 1578, 'slipper': 1082}
+Num classes (including bg) = 4
+Config has been written to configs/model_frcnn_13.pickle, and can be loaded when testing to ensure correct results
+===========
+epochs: 300
+===== config log start ======
+__doc__: None
+__module__: keras_frcnn.config6
+anchor_box_ratios: [[1, 1], [1, 2], [2, 1]]
+anchor_box_scales: [128, 256, 512]
+balanced_classes: False
+base_net_weights: resnet50_weights_tf_dim_ordering_tf_kernels.h5
+class_mapping: {'slipper': 1, 'sandal': 2, 'shoe': 0, 'bg': 3}
+classifier_max_overlap: 0.5
+classifier_min_overlap: 0.1
+classifier_regr_std: [8.0, 8.0, 4.0, 4.0]
+im_size: 600
+img_channel_mean: [103.939, 116.779, 123.68]
+img_scaling_factor: 1.0
+model_path: weights/model_frcnn_13.hdf5
+num_rois: 32
+rot_90: False
+rpn_max_overlap: 0.9
+rpn_min_overlap: 0.3
+rpn_stride: 16
+std_scaling: 4.0
+use_horizontal_flips: True
+use_vertical_flips: True
+verbose: True
+===== config log end ======
+Num train samples 133
+Num val samples 45
+loading weights from resnet50_weights_tf_dim_ordering_tf_kernels.h5
+Could not load pretrained model weights. Weights can be found at https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_th_dim_ordering_th_kernels_notop.h5 and https://github.com/fchollet/deep-learning-models/releases/download/v0.2/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5
+Starting training
+0 times
+Epoch 0:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 6.06
+Classifier accuracy for bounding boxes from RPN: 0.769375
+Loss RPN classifier: 0.940122834146
+Loss RPN regression: 0.91179065764
+Loss Classifier classifier: 1.05976075808
+Loss Classifier regression: 0.476762701869
+Elapsed time: 74.0969400406
+Total loss decreased from inf to 3.38843695173, saving weights
+Average number of overlapping bounding boxes from RPN = 6.06 for 50 previous iterations
+Epoch 1:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 21.3
+Classifier accuracy for bounding boxes from RPN: 0.555
+Loss RPN classifier: 0.370026048645
+Loss RPN regression: 0.489113004506
+Loss Classifier classifier: 1.1823999095
+Loss Classifier regression: 0.487365419865
+Elapsed time: 71.3742649555
+Total loss decreased from 3.38843695173 to 2.52890438251, saving weights
+100 times
+Average number of overlapping bounding boxes from RPN = 21.3 for 50 previous iterations
+Epoch 2:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 28.98
+Classifier accuracy for bounding boxes from RPN: 0.531875
+Loss RPN classifier: 0.327151892632
+Loss RPN regression: 0.424161271155
+Loss Classifier classifier: 1.16307289124
+Loss Classifier regression: 0.569555305243
+Elapsed time: 66.4453709126
+Total loss decreased from 2.52890438251 to 2.48394136027, saving weights
+Average number of overlapping bounding boxes from RPN = 28.98 for 50 previous iterations
+Epoch 3:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 30.68
+Classifier accuracy for bounding boxes from RPN: 0.53375
+Loss RPN classifier: 0.304561410174
+Loss RPN regression: 0.389973205328
+Loss Classifier classifier: 1.12623185635
+Loss Classifier regression: 0.540934650898
+Elapsed time: 67.1824839115
+Total loss decreased from 2.48394136027 to 2.36170112275, saving weights
+200 times
+Average number of overlapping bounding boxes from RPN = 30.68 for 50 previous iterations
+Epoch 4:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 31.24
+Classifier accuracy for bounding boxes from RPN: 0.570625
+Loss RPN classifier: 0.281612065881
+Loss RPN regression: 0.405453010798
+Loss Classifier classifier: 1.06854804635
+Loss Classifier regression: 0.547145023346
+Elapsed time: 67.3075909615
+Total loss decreased from 2.36170112275 to 2.30275814638, saving weights
+Average number of overlapping bounding boxes from RPN = 31.24 for 50 previous iterations
+Epoch 5:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 33.5
+Classifier accuracy for bounding boxes from RPN: 0.57
+Loss RPN classifier: 0.218578519598
+Loss RPN regression: 0.362721582055
+Loss Classifier classifier: 1.01883378983
+Loss Classifier regression: 0.548822513223
+Elapsed time: 68.5265698433
+Total loss decreased from 2.30275814638 to 2.1489564047, saving weights
+300 times
+Average number of overlapping bounding boxes from RPN = 33.5 for 50 previous iterations
+Epoch 6:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 30.7
+Classifier accuracy for bounding boxes from RPN: 0.5925
+Loss RPN classifier: 0.32214058347
+Loss RPN regression: 0.393718168139
+Loss Classifier classifier: 0.982949433327
+Loss Classifier regression: 0.537486240864
+Elapsed time: 66.6672518253
+Average number of overlapping bounding boxes from RPN = 30.7 for 50 previous iterations
+Epoch 7:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 31.78
+Classifier accuracy for bounding boxes from RPN: 0.60625
+Loss RPN classifier: 0.244617935419
+Loss RPN regression: 0.401201829314
+Loss Classifier classifier: 0.937891844511
+Loss Classifier regression: 0.527847983837
+Elapsed time: 65.930588007
+Total loss decreased from 2.1489564047 to 2.11155959308, saving weights
+400 times
+Average number of overlapping bounding boxes from RPN = 31.78 for 50 previous iterations
+Epoch 8:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 35.44
+Classifier accuracy for bounding boxes from RPN: 0.61625
+Loss RPN classifier: 0.282245308831
+Loss RPN regression: 0.338431541175
+Loss Classifier classifier: 0.921905753613
+Loss Classifier regression: 0.49700555861
+Elapsed time: 67.7788660526
+Total loss decreased from 2.11155959308 to 2.03958816223, saving weights
+Average number of overlapping bounding boxes from RPN = 35.44 for 50 previous iterations
+Epoch 9:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 34.94
+Classifier accuracy for bounding boxes from RPN: 0.638125
+Loss RPN classifier: 0.264951595068
+Loss RPN regression: 0.383855117559
+Loss Classifier classifier: 0.864606719017
+Loss Classifier regression: 0.526776734591
+Elapsed time: 66.0445039272
+500 times
+Average number of overlapping bounding boxes from RPN = 34.94 for 50 previous iterations
+Epoch 10:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 34.02
+Classifier accuracy for bounding boxes from RPN: 0.649375
+Loss RPN classifier: 0.261321302429
+Loss RPN regression: 0.379672394693
+Loss Classifier classifier: 0.871106069088
+Loss Classifier regression: 0.494921663404
+Elapsed time: 67.8365058899
+Total loss decreased from 2.03958816223 to 2.00702142961, saving weights
+Average number of overlapping bounding boxes from RPN = 34.02 for 50 previous iterations
+Epoch 11:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 38.8
+Classifier accuracy for bounding boxes from RPN: 0.634375
+Loss RPN classifier: 0.214885767251
+Loss RPN regression: 0.321717929542
+Loss Classifier classifier: 0.856045036912
+Loss Classifier regression: 0.470020077229
+Elapsed time: 67.804666996
+Total loss decreased from 2.00702142961 to 1.86266881093, saving weights
+600 times
+Average number of overlapping bounding boxes from RPN = 38.8 for 50 previous iterations
+Epoch 12:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 38.48
+Classifier accuracy for bounding boxes from RPN: 0.63625
+Loss RPN classifier: 0.206320346519
+Loss RPN regression: 0.351246654689
+Loss Classifier classifier: 0.860028374195
+Loss Classifier regression: 0.498012946844
+Elapsed time: 66.9018011093
+Average number of overlapping bounding boxes from RPN = 38.48 for 50 previous iterations
+Epoch 13:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 37.16
+Classifier accuracy for bounding boxes from RPN: 0.656875
+Loss RPN classifier: 0.212367974222
+Loss RPN regression: 0.347269169986
+Loss Classifier classifier: 0.823030121326
+Loss Classifier regression: 0.481604929566
+Elapsed time: 65.6453671455
+700 times
+Average number of overlapping bounding boxes from RPN = 37.16 for 50 previous iterations
+Epoch 14:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 34.56
+Classifier accuracy for bounding boxes from RPN: 0.655625
+Loss RPN classifier: 0.181812811866
+Loss RPN regression: 0.360561460555
+Loss Classifier classifier: 0.810095243454
+Loss Classifier regression: 0.488358790278
+Elapsed time: 66.073745966
+Total loss decreased from 1.86266881093 to 1.84082830615, saving weights
+Average number of overlapping bounding boxes from RPN = 34.56 for 50 previous iterations
+Epoch 15:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 38.62
+Classifier accuracy for bounding boxes from RPN: 0.664375
+Loss RPN classifier: 0.194373556226
+Loss RPN regression: 0.351262694001
+Loss Classifier classifier: 0.818462201357
+Loss Classifier regression: 0.47470656693
+Elapsed time: 67.3048169613
+Total loss decreased from 1.84082830615 to 1.83880501851, saving weights
+800 times
+Average number of overlapping bounding boxes from RPN = 38.62 for 50 previous iterations
+Epoch 16:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 36.5
+Classifier accuracy for bounding boxes from RPN: 0.6425
+Loss RPN classifier: 0.204907566234
+Loss RPN regression: 0.342967738807
+Loss Classifier classifier: 0.81398907721
+Loss Classifier regression: 0.471810053587
+Elapsed time: 66.5329089165
+Total loss decreased from 1.83880501851 to 1.83367443584, saving weights
+Average number of overlapping bounding boxes from RPN = 36.5 for 50 previous iterations
+Epoch 17:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 35.74
+Classifier accuracy for bounding boxes from RPN: 0.65
+Loss RPN classifier: 0.180356547385
+Loss RPN regression: 0.347614334524
+Loss Classifier classifier: 0.807616468668
+Loss Classifier regression: 0.468312476873
+Elapsed time: 66.2822318077
+Total loss decreased from 1.83367443584 to 1.80389982745, saving weights
+900 times
+Average number of overlapping bounding boxes from RPN = 35.74 for 50 previous iterations
+Epoch 18:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.02
+Classifier accuracy for bounding boxes from RPN: 0.7075
+Loss RPN classifier: 0.167425303683
+Loss RPN regression: 0.307502294183
+Loss Classifier classifier: 0.694271014929
+Loss Classifier regression: 0.457683443427
+Elapsed time: 67.605907917
+Total loss decreased from 1.80389982745 to 1.62688205622, saving weights
+Average number of overlapping bounding boxes from RPN = 45.02 for 50 previous iterations
+Epoch 19:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.08
+Classifier accuracy for bounding boxes from RPN: 0.67625
+Loss RPN classifier: 0.209516192451
+Loss RPN regression: 0.313360616714
+Loss Classifier classifier: 0.781067614555
+Loss Classifier regression: 0.444416221976
+Elapsed time: 67.2612140179
+1000 times
+Average number of overlapping bounding boxes from RPN = 39.08 for 50 previous iterations
+Epoch 20:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.64
+Classifier accuracy for bounding boxes from RPN: 0.69625
+Loss RPN classifier: 0.165913400613
+Loss RPN regression: 0.338280745745
+Loss Classifier classifier: 0.710471926928
+Loss Classifier regression: 0.451294718385
+Elapsed time: 66.0672090054
+Average number of overlapping bounding boxes from RPN = 40.64 for 50 previous iterations
+Epoch 21:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 37.4
+Classifier accuracy for bounding boxes from RPN: 0.684375
+Loss RPN classifier: 0.188979136534
+Loss RPN regression: 0.378819382042
+Loss Classifier classifier: 0.760602763891
+Loss Classifier regression: 0.501225568652
+Elapsed time: 66.6221649647
+1100 times
+Average number of overlapping bounding boxes from RPN = 37.4 for 50 previous iterations
+Epoch 22:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.64
+Classifier accuracy for bounding boxes from RPN: 0.70875
+Loss RPN classifier: 0.18441696465
+Loss RPN regression: 0.285715488046
+Loss Classifier classifier: 0.695423153043
+Loss Classifier regression: 0.443846600652
+Elapsed time: 66.4613428116
+Total loss decreased from 1.62688205622 to 1.60940220639, saving weights
+Average number of overlapping bounding boxes from RPN = 42.64 for 50 previous iterations
+Epoch 23:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.16
+Classifier accuracy for bounding boxes from RPN: 0.6975
+Loss RPN classifier: 0.189981964454
+Loss RPN regression: 0.318607283682
+Loss Classifier classifier: 0.720059251189
+Loss Classifier regression: 0.45057359755
+Elapsed time: 67.3493099213
+1200 times
+Average number of overlapping bounding boxes from RPN = 40.16 for 50 previous iterations
+Epoch 24:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.68
+Classifier accuracy for bounding boxes from RPN: 0.69875
+Loss RPN classifier: 0.173791688457
+Loss RPN regression: 0.343577017933
+Loss Classifier classifier: 0.740097873211
+Loss Classifier regression: 0.440221518278
+Elapsed time: 66.5979819298
+Average number of overlapping bounding boxes from RPN = 40.68 for 50 previous iterations
+Epoch 25:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.3
+Classifier accuracy for bounding boxes from RPN: 0.69
+Loss RPN classifier: 0.170260873511
+Loss RPN regression: 0.302451051027
+Loss Classifier classifier: 0.717317333221
+Loss Classifier regression: 0.429844315052
+Elapsed time: 66.1450409889
+1300 times
+Average number of overlapping bounding boxes from RPN = 39.3 for 50 previous iterations
+Epoch 26:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.96
+Classifier accuracy for bounding boxes from RPN: 0.70875
+Loss RPN classifier: 0.177189205512
+Loss RPN regression: 0.315375700891
+Loss Classifier classifier: 0.69198770225
+Loss Classifier regression: 0.447502090633
+Elapsed time: 66.9497621059
+Average number of overlapping bounding boxes from RPN = 39.96 for 50 previous iterations
+Epoch 27:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.34
+Classifier accuracy for bounding boxes from RPN: 0.726875
+Loss RPN classifier: 0.144062478542
+Loss RPN regression: 0.267854353189
+Loss Classifier classifier: 0.66113702476
+Loss Classifier regression: 0.428959703445
+Elapsed time: 66.4187891483
+Total loss decreased from 1.60940220639 to 1.50201355994, saving weights
+1400 times
+Average number of overlapping bounding boxes from RPN = 44.34 for 50 previous iterations
+Epoch 28:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.76
+Classifier accuracy for bounding boxes from RPN: 0.70375
+Loss RPN classifier: 0.154102165718
+Loss RPN regression: 0.329274312556
+Loss Classifier classifier: 0.725512984395
+Loss Classifier regression: 0.436120954752
+Elapsed time: 66.8906900883
+Average number of overlapping bounding boxes from RPN = 39.76 for 50 previous iterations
+Epoch 29:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 38.56
+Classifier accuracy for bounding boxes from RPN: 0.7175
+Loss RPN classifier: 0.155816889405
+Loss RPN regression: 0.322499312609
+Loss Classifier classifier: 0.65825139761
+Loss Classifier regression: 0.442392502427
+Elapsed time: 66.1305868626
+1500 times
+Average number of overlapping bounding boxes from RPN = 38.56 for 50 previous iterations
+Epoch 30:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.98
+Classifier accuracy for bounding boxes from RPN: 0.7075
+Loss RPN classifier: 0.174513621107
+Loss RPN regression: 0.304494181871
+Loss Classifier classifier: 0.678317142129
+Loss Classifier regression: 0.428898841739
+Elapsed time: 66.2380418777
+Average number of overlapping bounding boxes from RPN = 39.98 for 50 previous iterations
+Epoch 31:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.92
+Classifier accuracy for bounding boxes from RPN: 0.70125
+Loss RPN classifier: 0.17573223412
+Loss RPN regression: 0.275671651512
+Loss Classifier classifier: 0.719207945466
+Loss Classifier regression: 0.420433900952
+Elapsed time: 65.8498990536
+1600 times
+Average number of overlapping bounding boxes from RPN = 39.92 for 50 previous iterations
+Epoch 32:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.06
+Classifier accuracy for bounding boxes from RPN: 0.74375
+Loss RPN classifier: 0.160794474743
+Loss RPN regression: 0.28416306749
+Loss Classifier classifier: 0.616324444413
+Loss Classifier regression: 0.423005486727
+Elapsed time: 66.3989090919
+Total loss decreased from 1.50201355994 to 1.48428747337, saving weights
+Average number of overlapping bounding boxes from RPN = 42.06 for 50 previous iterations
+Epoch 33:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.14
+Classifier accuracy for bounding boxes from RPN: 0.71
+Loss RPN classifier: 0.173369604181
+Loss RPN regression: 0.294220348746
+Loss Classifier classifier: 0.731397330761
+Loss Classifier regression: 0.439159131348
+Elapsed time: 66.6454892159
+1700 times
+Average number of overlapping bounding boxes from RPN = 41.14 for 50 previous iterations
+Epoch 34:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.28
+Classifier accuracy for bounding boxes from RPN: 0.750625
+Loss RPN classifier: 0.153346494697
+Loss RPN regression: 0.328749129176
+Loss Classifier classifier: 0.612081014514
+Loss Classifier regression: 0.40514664948
+Elapsed time: 66.6948101521
+Average number of overlapping bounding boxes from RPN = 39.28 for 50 previous iterations
+Epoch 35:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.2
+Classifier accuracy for bounding boxes from RPN: 0.721875
+Loss RPN classifier: 0.165520764478
+Loss RPN regression: 0.251719161868
+Loss Classifier classifier: 0.674244856834
+Loss Classifier regression: 0.385495707989
+Elapsed time: 65.6087429523
+Total loss decreased from 1.48428747337 to 1.47698049117, saving weights
+1800 times
+Average number of overlapping bounding boxes from RPN = 42.2 for 50 previous iterations
+Epoch 36:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 38.38
+Classifier accuracy for bounding boxes from RPN: 0.70125
+Loss RPN classifier: 0.159712553918
+Loss RPN regression: 0.305622710437
+Loss Classifier classifier: 0.691666235328
+Loss Classifier regression: 0.431148162484
+Elapsed time: 66.6005680561
+Average number of overlapping bounding boxes from RPN = 38.38 for 50 previous iterations
+Epoch 37:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.88
+Classifier accuracy for bounding boxes from RPN: 0.716875
+Loss RPN classifier: 0.136577492431
+Loss RPN regression: 0.287432659268
+Loss Classifier classifier: 0.648620131016
+Loss Classifier regression: 0.410592419505
+Elapsed time: 66.242716074
+1900 times
+Average number of overlapping bounding boxes from RPN = 40.88 for 50 previous iterations
+Epoch 38:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 39.18
+Classifier accuracy for bounding boxes from RPN: 0.70375
+Loss RPN classifier: 0.180311147831
+Loss RPN regression: 0.280437476486
+Loss Classifier classifier: 0.664257488251
+Loss Classifier regression: 0.412044886649
+Elapsed time: 64.9347119331
+Average number of overlapping bounding boxes from RPN = 39.18 for 50 previous iterations
+Epoch 39:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.56
+Classifier accuracy for bounding boxes from RPN: 0.69875
+Loss RPN classifier: 0.165516743958
+Loss RPN regression: 0.25944551304
+Loss Classifier classifier: 0.709509478807
+Loss Classifier regression: 0.419303109646
+Elapsed time: 66.7971777916
+2000 times
+Average number of overlapping bounding boxes from RPN = 41.56 for 50 previous iterations
+Epoch 40:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.08
+Classifier accuracy for bounding boxes from RPN: 0.69125
+Loss RPN classifier: 0.156652083918
+Loss RPN regression: 0.268248711973
+Loss Classifier classifier: 0.695973142385
+Loss Classifier regression: 0.403199997246
+Elapsed time: 65.7409589291
+Average number of overlapping bounding boxes from RPN = 41.08 for 50 previous iterations
+Epoch 41:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.62
+Classifier accuracy for bounding boxes from RPN: 0.7275
+Loss RPN classifier: 0.122854087967
+Loss RPN regression: 0.270308472812
+Loss Classifier classifier: 0.619586212039
+Loss Classifier regression: 0.410393635929
+Elapsed time: 65.2989139557
+Total loss decreased from 1.47698049117 to 1.42314240875, saving weights
+2100 times
+Average number of overlapping bounding boxes from RPN = 42.62 for 50 previous iterations
+Epoch 42:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.76
+Classifier accuracy for bounding boxes from RPN: 0.695
+Loss RPN classifier: 0.138507487848
+Loss RPN regression: 0.291648753434
+Loss Classifier classifier: 0.714797130227
+Loss Classifier regression: 0.414767586887
+Elapsed time: 67.1909108162
+Average number of overlapping bounding boxes from RPN = 40.76 for 50 previous iterations
+Epoch 43:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 40.56
+Classifier accuracy for bounding boxes from RPN: 0.75125
+Loss RPN classifier: 0.166758154947
+Loss RPN regression: 0.25175886333
+Loss Classifier classifier: 0.595498378873
+Loss Classifier regression: 0.397026477456
+Elapsed time: 66.3451919556
+Total loss decreased from 1.42314240875 to 1.41104187461, saving weights
+2200 times
+Average number of overlapping bounding boxes from RPN = 40.56 for 50 previous iterations
+Epoch 44:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.12
+Classifier accuracy for bounding boxes from RPN: 0.716875
+Loss RPN classifier: 0.158602374364
+Loss RPN regression: 0.260785581321
+Loss Classifier classifier: 0.660580847859
+Loss Classifier regression: 0.393790177107
+Elapsed time: 66.9131970406
+Average number of overlapping bounding boxes from RPN = 41.12 for 50 previous iterations
+Epoch 45:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.0
+Classifier accuracy for bounding boxes from RPN: 0.724375
+Loss RPN classifier: 0.14806139268
+Loss RPN regression: 0.243473130018
+Loss Classifier classifier: 0.625352786183
+Loss Classifier regression: 0.402453846335
+Elapsed time: 65.8168900013
+2300 times
+Average number of overlapping bounding boxes from RPN = 42.0 for 50 previous iterations
+Epoch 46:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.6
+Classifier accuracy for bounding boxes from RPN: 0.736875
+Loss RPN classifier: 0.163085586764
+Loss RPN regression: 0.236460649073
+Loss Classifier classifier: 0.633471815586
+Loss Classifier regression: 0.385703132749
+Elapsed time: 66.063354969
+Average number of overlapping bounding boxes from RPN = 44.6 for 50 previous iterations
+Epoch 47:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.12
+Classifier accuracy for bounding boxes from RPN: 0.716875
+Loss RPN classifier: 0.155184129048
+Loss RPN regression: 0.271440065205
+Loss Classifier classifier: 0.65798217237
+Loss Classifier regression: 0.388043857515
+Elapsed time: 66.8015069962
+2400 times
+Average number of overlapping bounding boxes from RPN = 41.12 for 50 previous iterations
+Epoch 48:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.88
+Classifier accuracy for bounding boxes from RPN: 0.75375
+Loss RPN classifier: 0.147144898623
+Loss RPN regression: 0.252463338822
+Loss Classifier classifier: 0.576132661104
+Loss Classifier regression: 0.390480325818
+Elapsed time: 66.5832178593
+Total loss decreased from 1.41104187461 to 1.36622122437, saving weights
+Average number of overlapping bounding boxes from RPN = 43.88 for 50 previous iterations
+Epoch 49:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.42
+Classifier accuracy for bounding boxes from RPN: 0.714375
+Loss RPN classifier: 0.1393228852
+Loss RPN regression: 0.2551205118
+Loss Classifier classifier: 0.650099492669
+Loss Classifier regression: 0.39344299525
+Elapsed time: 66.4143369198
+2500 times
+Average number of overlapping bounding boxes from RPN = 43.42 for 50 previous iterations
+Epoch 50:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.58
+Classifier accuracy for bounding boxes from RPN: 0.72125
+Loss RPN classifier: 0.119396163449
+Loss RPN regression: 0.231209693402
+Loss Classifier classifier: 0.661155166626
+Loss Classifier regression: 0.401247834265
+Elapsed time: 65.9117360115
+Average number of overlapping bounding boxes from RPN = 44.58 for 50 previous iterations
+Epoch 51:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.34
+Classifier accuracy for bounding boxes from RPN: 0.713125
+Loss RPN classifier: 0.148586265277
+Loss RPN regression: 0.241058213711
+Loss Classifier classifier: 0.631085245609
+Loss Classifier regression: 0.401130223274
+Elapsed time: 67.1000370979
+2600 times
+Average number of overlapping bounding boxes from RPN = 43.34 for 50 previous iterations
+Epoch 52:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.14
+Classifier accuracy for bounding boxes from RPN: 0.741875
+Loss RPN classifier: 0.139365112949
+Loss RPN regression: 0.242329894453
+Loss Classifier classifier: 0.62758706212
+Loss Classifier regression: 0.385051155388
+Elapsed time: 65.7533710003
+Average number of overlapping bounding boxes from RPN = 41.14 for 50 previous iterations
+Epoch 53:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.42
+Classifier accuracy for bounding boxes from RPN: 0.7
+Loss RPN classifier: 0.132712284774
+Loss RPN regression: 0.257501480132
+Loss Classifier classifier: 0.693892354965
+Loss Classifier regression: 0.394583515525
+Elapsed time: 66.535421133
+2700 times
+Average number of overlapping bounding boxes from RPN = 41.42 for 50 previous iterations
+Epoch 54:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.18
+Classifier accuracy for bounding boxes from RPN: 0.719375
+Loss RPN classifier: 0.12402477961
+Loss RPN regression: 0.234303249568
+Loss Classifier classifier: 0.635844638348
+Loss Classifier regression: 0.412408678234
+Elapsed time: 65.8843080997
+Average number of overlapping bounding boxes from RPN = 42.18 for 50 previous iterations
+Epoch 55:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.84
+Classifier accuracy for bounding boxes from RPN: 0.74375
+Loss RPN classifier: 0.120808946844
+Loss RPN regression: 0.220455452055
+Loss Classifier classifier: 0.592205233574
+Loss Classifier regression: 0.405279851854
+Elapsed time: 66.1326031685
+Total loss decreased from 1.36622122437 to 1.33874948433, saving weights
+2800 times
+Average number of overlapping bounding boxes from RPN = 44.84 for 50 previous iterations
+Epoch 56:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.62
+Classifier accuracy for bounding boxes from RPN: 0.7475
+Loss RPN classifier: 0.132020960469
+Loss RPN regression: 0.220987093598
+Loss Classifier classifier: 0.574575359225
+Loss Classifier regression: 0.38446267277
+Elapsed time: 66.7949140072
+Total loss decreased from 1.33874948433 to 1.31204608606, saving weights
+Average number of overlapping bounding boxes from RPN = 44.62 for 50 previous iterations
+Epoch 57:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.84
+Classifier accuracy for bounding boxes from RPN: 0.748125
+Loss RPN classifier: 0.129144783355
+Loss RPN regression: 0.23361645408
+Loss Classifier classifier: 0.594272565842
+Loss Classifier regression: 0.386798273325
+Elapsed time: 67.226667881
+2900 times
+Average number of overlapping bounding boxes from RPN = 42.84 for 50 previous iterations
+Epoch 58:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.98
+Classifier accuracy for bounding boxes from RPN: 0.749375
+Loss RPN classifier: 0.108868306149
+Loss RPN regression: 0.205632137954
+Loss Classifier classifier: 0.5713795048
+Loss Classifier regression: 0.364005292058
+Elapsed time: 65.5314879417
+Total loss decreased from 1.31204608606 to 1.24988524096, saving weights
+Average number of overlapping bounding boxes from RPN = 43.98 for 50 previous iterations
+Epoch 59:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.72
+Classifier accuracy for bounding boxes from RPN: 0.74
+Loss RPN classifier: 0.100913867559
+Loss RPN regression: 0.219996264577
+Loss Classifier classifier: 0.630561947227
+Loss Classifier regression: 0.379333860576
+Elapsed time: 67.5906369686
+3000 times
+Average number of overlapping bounding boxes from RPN = 44.72 for 50 previous iterations
+Epoch 60:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.66
+Classifier accuracy for bounding boxes from RPN: 0.755625
+Loss RPN classifier: 0.10896107601
+Loss RPN regression: 0.222278985083
+Loss Classifier classifier: 0.581453799009
+Loss Classifier regression: 0.385548678339
+Elapsed time: 66.3072957993
+Average number of overlapping bounding boxes from RPN = 41.66 for 50 previous iterations
+Epoch 61:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.82
+Classifier accuracy for bounding boxes from RPN: 0.744375
+Loss RPN classifier: 0.115808781404
+Loss RPN regression: 0.201867007017
+Loss Classifier classifier: 0.578025820851
+Loss Classifier regression: 0.3760381639
+Elapsed time: 65.7205049992
+3100 times
+Average number of overlapping bounding boxes from RPN = 42.82 for 50 previous iterations
+Epoch 62:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.48
+Classifier accuracy for bounding boxes from RPN: 0.720625
+Loss RPN classifier: 0.122084255945
+Loss RPN regression: 0.205024353415
+Loss Classifier classifier: 0.620440455079
+Loss Classifier regression: 0.373902563155
+Elapsed time: 65.4431648254
+Average number of overlapping bounding boxes from RPN = 43.48 for 50 previous iterations
+Epoch 63:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.54
+Classifier accuracy for bounding boxes from RPN: 0.745
+Loss RPN classifier: 0.137663726099
+Loss RPN regression: 0.218755843639
+Loss Classifier classifier: 0.582884495854
+Loss Classifier regression: 0.376000531018
+Elapsed time: 65.9444599152
+3200 times
+Average number of overlapping bounding boxes from RPN = 43.54 for 50 previous iterations
+Epoch 64:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.46
+Classifier accuracy for bounding boxes from RPN: 0.765625
+Loss RPN classifier: 0.11782662956
+Loss RPN regression: 0.222972920835
+Loss Classifier classifier: 0.563064348102
+Loss Classifier regression: 0.38694124639
+Elapsed time: 65.1849229336
+Average number of overlapping bounding boxes from RPN = 43.46 for 50 previous iterations
+Epoch 65:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.24
+Classifier accuracy for bounding boxes from RPN: 0.74375
+Loss RPN classifier: 0.151448899265
+Loss RPN regression: 0.213170476705
+Loss Classifier classifier: 0.614119607806
+Loss Classifier regression: 0.388093681633
+Elapsed time: 65.613350153
+3300 times
+Average number of overlapping bounding boxes from RPN = 43.24 for 50 previous iterations
+Epoch 66:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.12
+Classifier accuracy for bounding boxes from RPN: 0.7525
+Loss RPN classifier: 0.104447891442
+Loss RPN regression: 0.216303152442
+Loss Classifier classifier: 0.574298225045
+Loss Classifier regression: 0.353871685863
+Elapsed time: 66.2129781246
+Total loss decreased from 1.24988524096 to 1.24892095479, saving weights
+Average number of overlapping bounding boxes from RPN = 43.12 for 50 previous iterations
+Epoch 67:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.14
+Classifier accuracy for bounding boxes from RPN: 0.76
+Loss RPN classifier: 0.137007793346
+Loss RPN regression: 0.194788044095
+Loss Classifier classifier: 0.575372487307
+Loss Classifier regression: 0.363941843212
+Elapsed time: 66.4222249985
+3400 times
+Average number of overlapping bounding boxes from RPN = 45.14 for 50 previous iterations
+Epoch 68:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.88
+Classifier accuracy for bounding boxes from RPN: 0.739375
+Loss RPN classifier: 0.130126061365
+Loss RPN regression: 0.218788692728
+Loss Classifier classifier: 0.608971015215
+Loss Classifier regression: 0.383551985323
+Elapsed time: 67.0640478134
+Average number of overlapping bounding boxes from RPN = 42.88 for 50 previous iterations
+Epoch 69:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.32
+Classifier accuracy for bounding boxes from RPN: 0.766875
+Loss RPN classifier: 0.113973624445
+Loss RPN regression: 0.205155855715
+Loss Classifier classifier: 0.553976108432
+Loss Classifier regression: 0.376773199141
+Elapsed time: 66.5196080208
+3500 times
+Average number of overlapping bounding boxes from RPN = 45.32 for 50 previous iterations
+Epoch 70:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.68
+Classifier accuracy for bounding boxes from RPN: 0.759375
+Loss RPN classifier: 0.13134285491
+Loss RPN regression: 0.208692847639
+Loss Classifier classifier: 0.597445486784
+Loss Classifier regression: 0.378973007202
+Elapsed time: 66.4338228703
+Average number of overlapping bounding boxes from RPN = 43.68 for 50 previous iterations
+Epoch 71:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.04
+Classifier accuracy for bounding boxes from RPN: 0.7525
+Loss RPN classifier: 0.118777766852
+Loss RPN regression: 0.202412100881
+Loss Classifier classifier: 0.562138636112
+Loss Classifier regression: 0.356366840303
+Elapsed time: 66.3924999237
+Total loss decreased from 1.24892095479 to 1.23969534415, saving weights
+3600 times
+Average number of overlapping bounding boxes from RPN = 43.04 for 50 previous iterations
+Epoch 72:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.26
+Classifier accuracy for bounding boxes from RPN: 0.75375
+Loss RPN classifier: 0.126878015604
+Loss RPN regression: 0.206461929232
+Loss Classifier classifier: 0.565081633329
+Loss Classifier regression: 0.372118019462
+Elapsed time: 67.3797199726
+Average number of overlapping bounding boxes from RPN = 44.26 for 50 previous iterations
+Epoch 73:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.3
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.128948022872
+Loss RPN regression: 0.191646622121
+Loss Classifier classifier: 0.572570043206
+Loss Classifier regression: 0.376506260931
+Elapsed time: 67.2451748848
+3700 times
+Average number of overlapping bounding boxes from RPN = 45.3 for 50 previous iterations
+Epoch 74:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.64
+Classifier accuracy for bounding boxes from RPN: 0.73625
+Loss RPN classifier: 0.119282381274
+Loss RPN regression: 0.203355697393
+Loss Classifier classifier: 0.600434855223
+Loss Classifier regression: 0.374344091713
+Elapsed time: 66.5433270931
+Average number of overlapping bounding boxes from RPN = 45.64 for 50 previous iterations
+Epoch 75:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.2
+Classifier accuracy for bounding boxes from RPN: 0.745625
+Loss RPN classifier: 0.102776438463
+Loss RPN regression: 0.195344761014
+Loss Classifier classifier: 0.569509726763
+Loss Classifier regression: 0.385066906512
+Elapsed time: 67.1215820312
+3800 times
+Average number of overlapping bounding boxes from RPN = 45.2 for 50 previous iterations
+Epoch 76:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.62
+Classifier accuracy for bounding boxes from RPN: 0.7625
+Loss RPN classifier: 0.134002830405
+Loss RPN regression: 0.194360905588
+Loss Classifier classifier: 0.575371167064
+Loss Classifier regression: 0.358013371527
+Elapsed time: 67.1114518642
+Average number of overlapping bounding boxes from RPN = 44.62 for 50 previous iterations
+Epoch 77:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.78
+Classifier accuracy for bounding boxes from RPN: 0.751875
+Loss RPN classifier: 0.119421901852
+Loss RPN regression: 0.176265238225
+Loss Classifier classifier: 0.561623860002
+Loss Classifier regression: 0.370685126185
+Elapsed time: 65.3849389553
+Total loss decreased from 1.23969534415 to 1.22799612626, saving weights
+3900 times
+Average number of overlapping bounding boxes from RPN = 44.78 for 50 previous iterations
+Epoch 78:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.34
+Classifier accuracy for bounding boxes from RPN: 0.749375
+Loss RPN classifier: 0.128837708542
+Loss RPN regression: 0.168614443094
+Loss Classifier classifier: 0.566453504562
+Loss Classifier regression: 0.366523541808
+Elapsed time: 66.77344203
+Average number of overlapping bounding boxes from RPN = 47.34 for 50 previous iterations
+Epoch 79:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.82
+Classifier accuracy for bounding boxes from RPN: 0.755625
+Loss RPN classifier: 0.0951795067545
+Loss RPN regression: 0.182930283695
+Loss Classifier classifier: 0.580341175795
+Loss Classifier regression: 0.34722109586
+Elapsed time: 66.3971009254
+Total loss decreased from 1.22799612626 to 1.2056720621, saving weights
+4000 times
+Average number of overlapping bounding boxes from RPN = 44.82 for 50 previous iterations
+Epoch 80:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.96
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.105679946998
+Loss RPN regression: 0.179777761698
+Loss Classifier classifier: 0.536666845679
+Loss Classifier regression: 0.37231968075
+Elapsed time: 66.8194851875
+Total loss decreased from 1.2056720621 to 1.19444423513, saving weights
+Average number of overlapping bounding boxes from RPN = 44.96 for 50 previous iterations
+Epoch 81:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.08
+Classifier accuracy for bounding boxes from RPN: 0.733125
+Loss RPN classifier: 0.0967370887287
+Loss RPN regression: 0.196287417859
+Loss Classifier classifier: 0.642414855361
+Loss Classifier regression: 0.353402526081
+Elapsed time: 67.2427670956
+4100 times
+Average number of overlapping bounding boxes from RPN = 45.08 for 50 previous iterations
+Epoch 82:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.24
+Classifier accuracy for bounding boxes from RPN: 0.76875
+Loss RPN classifier: 0.136808253229
+Loss RPN regression: 0.179474477768
+Loss Classifier classifier: 0.533597751856
+Loss Classifier regression: 0.352197855115
+Elapsed time: 66.0385601521
+Average number of overlapping bounding boxes from RPN = 43.24 for 50 previous iterations
+Epoch 83:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.24
+Classifier accuracy for bounding boxes from RPN: 0.750625
+Loss RPN classifier: 0.12809001388
+Loss RPN regression: 0.193095302582
+Loss Classifier classifier: 0.586117813587
+Loss Classifier regression: 0.370514975488
+Elapsed time: 67.1859769821
+4200 times
+Average number of overlapping bounding boxes from RPN = 44.24 for 50 previous iterations
+Epoch 84:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.24
+Classifier accuracy for bounding boxes from RPN: 0.78
+Loss RPN classifier: 0.12238154145
+Loss RPN regression: 0.177077657431
+Loss Classifier classifier: 0.539739699364
+Loss Classifier regression: 0.352398617566
+Elapsed time: 66.7840790749
+Total loss decreased from 1.19444423513 to 1.19159751581, saving weights
+Average number of overlapping bounding boxes from RPN = 47.24 for 50 previous iterations
+Epoch 85:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.34
+Classifier accuracy for bounding boxes from RPN: 0.77125
+Loss RPN classifier: 0.09681892436
+Loss RPN regression: 0.180278181881
+Loss Classifier classifier: 0.518668558598
+Loss Classifier regression: 0.355142582655
+Elapsed time: 66.5790660381
+Total loss decreased from 1.19159751581 to 1.15090824749, saving weights
+4300 times
+Average number of overlapping bounding boxes from RPN = 46.34 for 50 previous iterations
+Epoch 86:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.92
+Classifier accuracy for bounding boxes from RPN: 0.758125
+Loss RPN classifier: 0.103821515585
+Loss RPN regression: 0.182153997272
+Loss Classifier classifier: 0.577548455894
+Loss Classifier regression: 0.368837065995
+Elapsed time: 66.4296779633
+Average number of overlapping bounding boxes from RPN = 44.92 for 50 previous iterations
+Epoch 87:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.54
+Classifier accuracy for bounding boxes from RPN: 0.7525
+Loss RPN classifier: 0.131975234617
+Loss RPN regression: 0.177734133154
+Loss Classifier classifier: 0.568486946821
+Loss Classifier regression: 0.340897523165
+Elapsed time: 65.381385088
+4400 times
+Average number of overlapping bounding boxes from RPN = 44.54 for 50 previous iterations
+Epoch 88:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.82
+Classifier accuracy for bounding boxes from RPN: 0.755625
+Loss RPN classifier: 0.124198981468
+Loss RPN regression: 0.184331089035
+Loss Classifier classifier: 0.581229140162
+Loss Classifier regression: 0.357748161554
+Elapsed time: 65.9588809013
+Average number of overlapping bounding boxes from RPN = 42.82 for 50 previous iterations
+Epoch 89:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.44
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.110575163215
+Loss RPN regression: 0.183479647934
+Loss Classifier classifier: 0.587092122138
+Loss Classifier regression: 0.360974963605
+Elapsed time: 67.3015639782
+4500 times
+Average number of overlapping bounding boxes from RPN = 46.44 for 50 previous iterations
+Epoch 90:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.98
+Classifier accuracy for bounding boxes from RPN: 0.798125
+Loss RPN classifier: 0.13232514509
+Loss RPN regression: 0.168522438556
+Loss Classifier classifier: 0.495004202127
+Loss Classifier regression: 0.330774125457
+Elapsed time: 66.7993371487
+Total loss decreased from 1.15090824749 to 1.12662591123, saving weights
+Average number of overlapping bounding boxes from RPN = 46.98 for 50 previous iterations
+Epoch 91:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.88
+Classifier accuracy for bounding boxes from RPN: 0.779375
+Loss RPN classifier: 0.106181782421
+Loss RPN regression: 0.166811461747
+Loss Classifier classifier: 0.523854957819
+Loss Classifier regression: 0.350450421572
+Elapsed time: 66.9507629871
+4600 times
+Average number of overlapping bounding boxes from RPN = 43.88 for 50 previous iterations
+Epoch 92:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.56
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.137497527041
+Loss RPN regression: 0.163425429836
+Loss Classifier classifier: 0.550196240544
+Loss Classifier regression: 0.342406577766
+Elapsed time: 65.4296078682
+Average number of overlapping bounding boxes from RPN = 44.56 for 50 previous iterations
+Epoch 93:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.32
+Classifier accuracy for bounding boxes from RPN: 0.8
+Loss RPN classifier: 0.115523672402
+Loss RPN regression: 0.148218475804
+Loss Classifier classifier: 0.463993604481
+Loss Classifier regression: 0.318640619516
+Elapsed time: 67.1048030853
+Total loss decreased from 1.12662591123 to 1.0463763722, saving weights
+4700 times
+Average number of overlapping bounding boxes from RPN = 47.32 for 50 previous iterations
+Epoch 94:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.34
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.125918792486
+Loss RPN regression: 0.17661867857
+Loss Classifier classifier: 0.576472049356
+Loss Classifier regression: 0.35735856086
+Elapsed time: 66.1989090443
+Average number of overlapping bounding boxes from RPN = 44.34 for 50 previous iterations
+Epoch 95:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.58
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.112475961819
+Loss RPN regression: 0.19475797154
+Loss Classifier classifier: 0.566874108315
+Loss Classifier regression: 0.344538204968
+Elapsed time: 65.7429080009
+4800 times
+Average number of overlapping bounding boxes from RPN = 43.58 for 50 previous iterations
+Epoch 96:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.76
+Classifier accuracy for bounding boxes from RPN: 0.798125
+Loss RPN classifier: 0.0874739576876
+Loss RPN regression: 0.161275693625
+Loss Classifier classifier: 0.462275407612
+Loss Classifier regression: 0.335927221775
+Elapsed time: 66.1491479874
+Average number of overlapping bounding boxes from RPN = 44.76 for 50 previous iterations
+Epoch 97:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 49.1
+Classifier accuracy for bounding boxes from RPN: 0.78
+Loss RPN classifier: 0.0649978832062
+Loss RPN regression: 0.151866994053
+Loss Classifier classifier: 0.534674965739
+Loss Classifier regression: 0.331676833332
+Elapsed time: 66.309596777
+4900 times
+Average number of overlapping bounding boxes from RPN = 49.1 for 50 previous iterations
+Epoch 98:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.4
+Classifier accuracy for bounding boxes from RPN: 0.779375
+Loss RPN classifier: 0.162789271502
+Loss RPN regression: 0.162949648425
+Loss Classifier classifier: 0.523856197894
+Loss Classifier regression: 0.367062048614
+Elapsed time: 66.4854419231
+Average number of overlapping bounding boxes from RPN = 45.4 for 50 previous iterations
+Epoch 99:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.6
+Classifier accuracy for bounding boxes from RPN: 0.794375
+Loss RPN classifier: 0.10352586248
+Loss RPN regression: 0.16400285691
+Loss Classifier classifier: 0.498740856647
+Loss Classifier regression: 0.325921193361
+Elapsed time: 65.496942997
+5000 times
+Average number of overlapping bounding boxes from RPN = 45.6 for 50 previous iterations
+Epoch 100:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.36
+Classifier accuracy for bounding boxes from RPN: 0.785
+Loss RPN classifier: 0.117094711568
+Loss RPN regression: 0.165554656684
+Loss Classifier classifier: 0.547676529884
+Loss Classifier regression: 0.347731421292
+Elapsed time: 66.3401219845
+Average number of overlapping bounding boxes from RPN = 44.36 for 50 previous iterations
+Epoch 101:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.64
+Classifier accuracy for bounding boxes from RPN: 0.774375
+Loss RPN classifier: 0.095919156149
+Loss RPN regression: 0.145821315125
+Loss Classifier classifier: 0.533439122438
+Loss Classifier regression: 0.317761300504
+Elapsed time: 66.6879858971
+5100 times
+Average number of overlapping bounding boxes from RPN = 47.64 for 50 previous iterations
+Epoch 102:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.64
+Classifier accuracy for bounding boxes from RPN: 0.761875
+Loss RPN classifier: 0.0957563355472
+Loss RPN regression: 0.171726570576
+Loss Classifier classifier: 0.556118119359
+Loss Classifier regression: 0.343192867637
+Elapsed time: 64.5902659893
+Average number of overlapping bounding boxes from RPN = 43.64 for 50 previous iterations
+Epoch 103:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.24
+Classifier accuracy for bounding boxes from RPN: 0.798125
+Loss RPN classifier: 0.109128253069
+Loss RPN regression: 0.157288786769
+Loss Classifier classifier: 0.467378421724
+Loss Classifier regression: 0.337888285816
+Elapsed time: 66.0678560734
+5200 times
+Average number of overlapping bounding boxes from RPN = 47.24 for 50 previous iterations
+Epoch 104:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.38
+Classifier accuracy for bounding boxes from RPN: 0.81125
+Loss RPN classifier: 0.096680950122
+Loss RPN regression: 0.149649043977
+Loss Classifier classifier: 0.486021193862
+Loss Classifier regression: 0.325609346032
+Elapsed time: 65.4652168751
+Average number of overlapping bounding boxes from RPN = 44.38 for 50 previous iterations
+Epoch 105:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.08
+Classifier accuracy for bounding boxes from RPN: 0.773125
+Loss RPN classifier: 0.0866806264222
+Loss RPN regression: 0.153812579587
+Loss Classifier classifier: 0.533682111204
+Loss Classifier regression: 0.326473107934
+Elapsed time: 66.7485539913
+5300 times
+Average number of overlapping bounding boxes from RPN = 46.08 for 50 previous iterations
+Epoch 106:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.04
+Classifier accuracy for bounding boxes from RPN: 0.795625
+Loss RPN classifier: 0.111949041542
+Loss RPN regression: 0.162284978628
+Loss Classifier classifier: 0.505894535184
+Loss Classifier regression: 0.334415437579
+Elapsed time: 65.7036621571
+Average number of overlapping bounding boxes from RPN = 45.04 for 50 previous iterations
+Epoch 107:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.66
+Classifier accuracy for bounding boxes from RPN: 0.795625
+Loss RPN classifier: 0.102555365786
+Loss RPN regression: 0.152480967268
+Loss Classifier classifier: 0.509823574424
+Loss Classifier regression: 0.337200551033
+Elapsed time: 66.8700110912
+5400 times
+Average number of overlapping bounding boxes from RPN = 47.66 for 50 previous iterations
+Epoch 108:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.94
+Classifier accuracy for bounding boxes from RPN: 0.784375
+Loss RPN classifier: 0.0918464222271
+Loss RPN regression: 0.149336836487
+Loss Classifier classifier: 0.52775023222
+Loss Classifier regression: 0.330700353384
+Elapsed time: 66.1889541149
+Average number of overlapping bounding boxes from RPN = 46.94 for 50 previous iterations
+Epoch 109:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.72
+Classifier accuracy for bounding boxes from RPN: 0.789375
+Loss RPN classifier: 0.0819432918727
+Loss RPN regression: 0.13927453503
+Loss Classifier classifier: 0.47335493207
+Loss Classifier regression: 0.331028727293
+Elapsed time: 66.8984160423
+Total loss decreased from 1.0463763722 to 1.02560148627, saving weights
+5500 times
+Average number of overlapping bounding boxes from RPN = 46.72 for 50 previous iterations
+Epoch 110:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.66
+Classifier accuracy for bounding boxes from RPN: 0.768125
+Loss RPN classifier: 0.123773287162
+Loss RPN regression: 0.149297680706
+Loss Classifier classifier: 0.541575959921
+Loss Classifier regression: 0.340186039805
+Elapsed time: 65.9056019783
+Average number of overlapping bounding boxes from RPN = 44.66 for 50 previous iterations
+Epoch 111:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.42
+Classifier accuracy for bounding boxes from RPN: 0.77875
+Loss RPN classifier: 0.103562542237
+Loss RPN regression: 0.147183419764
+Loss Classifier classifier: 0.526664056778
+Loss Classifier regression: 0.33309940964
+Elapsed time: 65.1056368351
+5600 times
+Average number of overlapping bounding boxes from RPN = 45.42 for 50 previous iterations
+Epoch 112:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.28
+Classifier accuracy for bounding boxes from RPN: 0.791875
+Loss RPN classifier: 0.0867011577263
+Loss RPN regression: 0.150259776786
+Loss Classifier classifier: 0.48570674479
+Loss Classifier regression: 0.343102551997
+Elapsed time: 64.7282679081
+Average number of overlapping bounding boxes from RPN = 46.28 for 50 previous iterations
+Epoch 113:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.6
+Classifier accuracy for bounding boxes from RPN: 0.810625
+Loss RPN classifier: 0.110045271092
+Loss RPN regression: 0.146647569016
+Loss Classifier classifier: 0.484059449136
+Loss Classifier regression: 0.296026847512
+Elapsed time: 65.7134289742
+5700 times
+Average number of overlapping bounding boxes from RPN = 46.6 for 50 previous iterations
+Epoch 114:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.92
+Classifier accuracy for bounding boxes from RPN: 0.783125
+Loss RPN classifier: 0.0887463783007
+Loss RPN regression: 0.141967080235
+Loss Classifier classifier: 0.514730364382
+Loss Classifier regression: 0.316879359186
+Elapsed time: 66.2378180027
+Average number of overlapping bounding boxes from RPN = 45.92 for 50 previous iterations
+Epoch 115:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.86
+Classifier accuracy for bounding boxes from RPN: 0.7925
+Loss RPN classifier: 0.0995733540785
+Loss RPN regression: 0.14996476993
+Loss Classifier classifier: 0.47081294328
+Loss Classifier regression: 0.324670468271
+Elapsed time: 65.9881780148
+5800 times
+Average number of overlapping bounding boxes from RPN = 44.86 for 50 previous iterations
+Epoch 116:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.44
+Classifier accuracy for bounding boxes from RPN: 0.789375
+Loss RPN classifier: 0.0888791412581
+Loss RPN regression: 0.142968504503
+Loss Classifier classifier: 0.501789101958
+Loss Classifier regression: 0.320043851435
+Elapsed time: 65.1620488167
+Average number of overlapping bounding boxes from RPN = 45.44 for 50 previous iterations
+Epoch 117:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.32
+Classifier accuracy for bounding boxes from RPN: 0.769375
+Loss RPN classifier: 0.0923541263491
+Loss RPN regression: 0.151484939829
+Loss Classifier classifier: 0.539265554249
+Loss Classifier regression: 0.319946255684
+Elapsed time: 65.8314449787
+5900 times
+Average number of overlapping bounding boxes from RPN = 44.32 for 50 previous iterations
+Epoch 118:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.72
+Classifier accuracy for bounding boxes from RPN: 0.783125
+Loss RPN classifier: 0.0982721676957
+Loss RPN regression: 0.137077188864
+Loss Classifier classifier: 0.494009752274
+Loss Classifier regression: 0.327531977892
+Elapsed time: 66.0269699097
+Average number of overlapping bounding boxes from RPN = 47.72 for 50 previous iterations
+Epoch 119:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.8
+Classifier accuracy for bounding boxes from RPN: 0.801875
+Loss RPN classifier: 0.101741689155
+Loss RPN regression: 0.16974787727
+Loss Classifier classifier: 0.462802623808
+Loss Classifier regression: 0.323970301449
+Elapsed time: 65.5818581581
+6000 times
+Average number of overlapping bounding boxes from RPN = 44.8 for 50 previous iterations
+Epoch 120:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.5
+Classifier accuracy for bounding boxes from RPN: 0.775625
+Loss RPN classifier: 0.100060497099
+Loss RPN regression: 0.146273402423
+Loss Classifier classifier: 0.494419060946
+Loss Classifier regression: 0.349580155015
+Elapsed time: 65.618429184
+Average number of overlapping bounding boxes from RPN = 45.5 for 50 previous iterations
+Epoch 121:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.88
+Classifier accuracy for bounding boxes from RPN: 0.791875
+Loss RPN classifier: 0.10253921588
+Loss RPN regression: 0.141139110103
+Loss Classifier classifier: 0.493065918684
+Loss Classifier regression: 0.33463655442
+Elapsed time: 67.6586821079
+6100 times
+Average number of overlapping bounding boxes from RPN = 45.88 for 50 previous iterations
+Epoch 122:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.48
+Classifier accuracy for bounding boxes from RPN: 0.79625
+Loss RPN classifier: 0.0986066849064
+Loss RPN regression: 0.144406203032
+Loss Classifier classifier: 0.496251703203
+Loss Classifier regression: 0.312426016927
+Elapsed time: 66.4986569881
+Average number of overlapping bounding boxes from RPN = 46.48 for 50 previous iterations
+Epoch 123:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.62
+Classifier accuracy for bounding boxes from RPN: 0.776875
+Loss RPN classifier: 0.0997833351418
+Loss RPN regression: 0.136454836503
+Loss Classifier classifier: 0.488742988408
+Loss Classifier regression: 0.322828956246
+Elapsed time: 65.837651968
+6200 times
+Average number of overlapping bounding boxes from RPN = 46.62 for 50 previous iterations
+Epoch 124:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.12
+Classifier accuracy for bounding boxes from RPN: 0.78
+Loss RPN classifier: 0.105381440502
+Loss RPN regression: 0.138736788705
+Loss Classifier classifier: 0.535582721829
+Loss Classifier regression: 0.326272945702
+Elapsed time: 64.8487718105
+Average number of overlapping bounding boxes from RPN = 46.12 for 50 previous iterations
+Epoch 125:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.52
+Classifier accuracy for bounding boxes from RPN: 0.801875
+Loss RPN classifier: 0.106868136143
+Loss RPN regression: 0.13806437768
+Loss Classifier classifier: 0.509610885978
+Loss Classifier regression: 0.315365731716
+Elapsed time: 66.6875560284
+6300 times
+Average number of overlapping bounding boxes from RPN = 47.52 for 50 previous iterations
+Epoch 126:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.66
+Classifier accuracy for bounding boxes from RPN: 0.80375
+Loss RPN classifier: 0.0768955816887
+Loss RPN regression: 0.157895420715
+Loss Classifier classifier: 0.456665597856
+Loss Classifier regression: 0.325226153135
+Elapsed time: 66.0530970097
+Total loss decreased from 1.02560148627 to 1.0166827534, saving weights
+Average number of overlapping bounding boxes from RPN = 45.66 for 50 previous iterations
+Epoch 127:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.5
+Classifier accuracy for bounding boxes from RPN: 0.81375
+Loss RPN classifier: 0.0920092279464
+Loss RPN regression: 0.118331628293
+Loss Classifier classifier: 0.437634500265
+Loss Classifier regression: 0.316019333303
+Elapsed time: 65.6550409794
+Total loss decreased from 1.0166827534 to 0.963994689807, saving weights
+6400 times
+Average number of overlapping bounding boxes from RPN = 46.5 for 50 previous iterations
+Epoch 128:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.36
+Classifier accuracy for bounding boxes from RPN: 0.798125
+Loss RPN classifier: 0.0955235556886
+Loss RPN regression: 0.132237814665
+Loss Classifier classifier: 0.467049469054
+Loss Classifier regression: 0.328122974336
+Elapsed time: 67.3694608212
+Average number of overlapping bounding boxes from RPN = 45.36 for 50 previous iterations
+Epoch 129:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.06
+Classifier accuracy for bounding boxes from RPN: 0.77125
+Loss RPN classifier: 0.0960550638195
+Loss RPN regression: 0.137637424767
+Loss Classifier classifier: 0.533987017274
+Loss Classifier regression: 0.327457377613
+Elapsed time: 66.397769928
+6500 times
+Average number of overlapping bounding boxes from RPN = 46.06 for 50 previous iterations
+Epoch 130:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.38
+Classifier accuracy for bounding boxes from RPN: 0.805
+Loss RPN classifier: 0.0877226323914
+Loss RPN regression: 0.152936526984
+Loss Classifier classifier: 0.454987209737
+Loss Classifier regression: 0.301419365406
+Elapsed time: 65.5839219093
+Average number of overlapping bounding boxes from RPN = 44.38 for 50 previous iterations
+Epoch 131:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.16
+Classifier accuracy for bounding boxes from RPN: 0.818125
+Loss RPN classifier: 0.0762266397197
+Loss RPN regression: 0.136450544745
+Loss Classifier classifier: 0.446281896532
+Loss Classifier regression: 0.322878911197
+Elapsed time: 66.0192608833
+6600 times
+Average number of overlapping bounding boxes from RPN = 45.16 for 50 previous iterations
+Epoch 132:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.82
+Classifier accuracy for bounding boxes from RPN: 0.7975
+Loss RPN classifier: 0.0960465970775
+Loss RPN regression: 0.131050337628
+Loss Classifier classifier: 0.501444544792
+Loss Classifier regression: 0.313777174205
+Elapsed time: 67.0555050373
+Average number of overlapping bounding boxes from RPN = 46.82 for 50 previous iterations
+Epoch 133:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.04
+Classifier accuracy for bounding boxes from RPN: 0.794375
+Loss RPN classifier: 0.0764868976083
+Loss RPN regression: 0.133000352606
+Loss Classifier classifier: 0.475807210207
+Loss Classifier regression: 0.329034999013
+Elapsed time: 66.1076171398
+6700 times
+Average number of overlapping bounding boxes from RPN = 46.04 for 50 previous iterations
+Epoch 134:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.82
+Classifier accuracy for bounding boxes from RPN: 0.82375
+Loss RPN classifier: 0.0872175627598
+Loss RPN regression: 0.139210894704
+Loss Classifier classifier: 0.438287473321
+Loss Classifier regression: 0.303947226405
+Elapsed time: 65.2592871189
+Average number of overlapping bounding boxes from RPN = 46.82 for 50 previous iterations
+Epoch 135:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.06
+Classifier accuracy for bounding boxes from RPN: 0.791875
+Loss RPN classifier: 0.0803011698881
+Loss RPN regression: 0.140813986883
+Loss Classifier classifier: 0.48903642416
+Loss Classifier regression: 0.313100911975
+Elapsed time: 65.3302810192
+6800 times
+Average number of overlapping bounding boxes from RPN = 44.06 for 50 previous iterations
+Epoch 136:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.96
+Classifier accuracy for bounding boxes from RPN: 0.80875
+Loss RPN classifier: 0.095764811011
+Loss RPN regression: 0.125522532016
+Loss Classifier classifier: 0.47105455488
+Loss Classifier regression: 0.323470172584
+Elapsed time: 65.6883811951
+Average number of overlapping bounding boxes from RPN = 46.96 for 50 previous iterations
+Epoch 137:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.74
+Classifier accuracy for bounding boxes from RPN: 0.82625
+Loss RPN classifier: 0.0682370602433
+Loss RPN regression: 0.119200945869
+Loss Classifier classifier: 0.416510245204
+Loss Classifier regression: 0.318317284286
+Elapsed time: 66.4735050201
+Total loss decreased from 0.963994689807 to 0.922265535602, saving weights
+6900 times
+Average number of overlapping bounding boxes from RPN = 46.74 for 50 previous iterations
+Epoch 138:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.52
+Classifier accuracy for bounding boxes from RPN: 0.816875
+Loss RPN classifier: 0.0908713688515
+Loss RPN regression: 0.1306660809
+Loss Classifier classifier: 0.474427075982
+Loss Classifier regression: 0.316515817344
+Elapsed time: 66.4752309322
+Average number of overlapping bounding boxes from RPN = 44.52 for 50 previous iterations
+Epoch 139:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.1
+Classifier accuracy for bounding boxes from RPN: 0.805625
+Loss RPN classifier: 0.081994260326
+Loss RPN regression: 0.119945871308
+Loss Classifier classifier: 0.447577434182
+Loss Classifier regression: 0.32324739486
+Elapsed time: 65.6194210052
+7000 times
+Average number of overlapping bounding boxes from RPN = 46.1 for 50 previous iterations
+Epoch 140:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.92
+Classifier accuracy for bounding boxes from RPN: 0.790625
+Loss RPN classifier: 0.0999063624069
+Loss RPN regression: 0.13803997606
+Loss Classifier classifier: 0.489999574721
+Loss Classifier regression: 0.306661687493
+Elapsed time: 64.3887379169
+Average number of overlapping bounding boxes from RPN = 44.92 for 50 previous iterations
+Epoch 141:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.64
+Classifier accuracy for bounding boxes from RPN: 0.823125
+Loss RPN classifier: 0.0800735328626
+Loss RPN regression: 0.121262770072
+Loss Classifier classifier: 0.431384110451
+Loss Classifier regression: 0.311390761435
+Elapsed time: 66.2911438942
+7100 times
+Average number of overlapping bounding boxes from RPN = 45.64 for 50 previous iterations
+Epoch 142:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.0
+Classifier accuracy for bounding boxes from RPN: 0.7975
+Loss RPN classifier: 0.100638687089
+Loss RPN regression: 0.11875423938
+Loss Classifier classifier: 0.494131991565
+Loss Classifier regression: 0.293021496236
+Elapsed time: 64.1655220985
+Average number of overlapping bounding boxes from RPN = 45.0 for 50 previous iterations
+Epoch 143:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.52
+Classifier accuracy for bounding boxes from RPN: 0.81
+Loss RPN classifier: 0.101397715826
+Loss RPN regression: 0.129302667379
+Loss Classifier classifier: 0.462057163715
+Loss Classifier regression: 0.300916056633
+Elapsed time: 64.1884679794
+7200 times
+Average number of overlapping bounding boxes from RPN = 44.52 for 50 previous iterations
+Epoch 144:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 48.14
+Classifier accuracy for bounding boxes from RPN: 0.81125
+Loss RPN classifier: 0.0739974009432
+Loss RPN regression: 0.113252908885
+Loss Classifier classifier: 0.446638412178
+Loss Classifier regression: 0.300256971717
+Elapsed time: 66.1691219807
+Average number of overlapping bounding boxes from RPN = 48.14 for 50 previous iterations
+Epoch 145:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.12
+Classifier accuracy for bounding boxes from RPN: 0.784375
+Loss RPN classifier: 0.0755227525346
+Loss RPN regression: 0.126687894911
+Loss Classifier classifier: 0.524413375854
+Loss Classifier regression: 0.298482652009
+Elapsed time: 66.2017591
+7300 times
+Average number of overlapping bounding boxes from RPN = 46.12 for 50 previous iterations
+Epoch 146:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.72
+Classifier accuracy for bounding boxes from RPN: 0.82375
+Loss RPN classifier: 0.0736223510467
+Loss RPN regression: 0.122301886454
+Loss Classifier classifier: 0.419507310987
+Loss Classifier regression: 0.299919829965
+Elapsed time: 66.5693211555
+Total loss decreased from 0.922265535602 to 0.915351378452, saving weights
+Average number of overlapping bounding boxes from RPN = 45.72 for 50 previous iterations
+Epoch 147:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.74
+Classifier accuracy for bounding boxes from RPN: 0.825
+Loss RPN classifier: 0.0715875892574
+Loss RPN regression: 0.123453905657
+Loss Classifier classifier: 0.440902313888
+Loss Classifier regression: 0.292756129205
+Elapsed time: 64.9162302017
+7400 times
+Average number of overlapping bounding boxes from RPN = 45.74 for 50 previous iterations
+Epoch 148:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.28
+Classifier accuracy for bounding boxes from RPN: 0.80875
+Loss RPN classifier: 0.084276853241
+Loss RPN regression: 0.140421235859
+Loss Classifier classifier: 0.465896707773
+Loss Classifier regression: 0.293677621484
+Elapsed time: 64.8010020256
+Average number of overlapping bounding boxes from RPN = 45.28 for 50 previous iterations
+Epoch 149:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.44
+Classifier accuracy for bounding boxes from RPN: 0.790625
+Loss RPN classifier: 0.0589877191326
+Loss RPN regression: 0.123286810815
+Loss Classifier classifier: 0.48021638453
+Loss Classifier regression: 0.300150730014
+Elapsed time: 65.4051170349
+7500 times
+Average number of overlapping bounding boxes from RPN = 46.44 for 50 previous iterations
+Epoch 150:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.58
+Classifier accuracy for bounding boxes from RPN: 0.8125
+Loss RPN classifier: 0.0920249274559
+Loss RPN regression: 0.123312095478
+Loss Classifier classifier: 0.451606689394
+Loss Classifier regression: 0.284471791387
+Elapsed time: 66.5310189724
+Average number of overlapping bounding boxes from RPN = 45.58 for 50 previous iterations
+Epoch 151:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.6
+Classifier accuracy for bounding boxes from RPN: 0.81375
+Loss RPN classifier: 0.0999788484629
+Loss RPN regression: 0.130967437401
+Loss Classifier classifier: 0.44157687217
+Loss Classifier regression: 0.311006681919
+Elapsed time: 65.7329699993
+7600 times
+Average number of overlapping bounding boxes from RPN = 45.6 for 50 previous iterations
+Epoch 152:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.96
+Classifier accuracy for bounding boxes from RPN: 0.818125
+Loss RPN classifier: 0.056798528526
+Loss RPN regression: 0.117455324233
+Loss Classifier classifier: 0.487614689767
+Loss Classifier regression: 0.291076524854
+Elapsed time: 65.2923309803
+Average number of overlapping bounding boxes from RPN = 44.96 for 50 previous iterations
+Epoch 153:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.6
+Classifier accuracy for bounding boxes from RPN: 0.80625
+Loss RPN classifier: 0.0615940862056
+Loss RPN regression: 0.122034178525
+Loss Classifier classifier: 0.439303604066
+Loss Classifier regression: 0.299371811002
+Elapsed time: 65.5157649517
+7700 times
+Average number of overlapping bounding boxes from RPN = 46.6 for 50 previous iterations
+Epoch 154:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.42
+Classifier accuracy for bounding boxes from RPN: 0.810625
+Loss RPN classifier: 0.0838520629331
+Loss RPN regression: 0.114656732976
+Loss Classifier classifier: 0.46113538295
+Loss Classifier regression: 0.294759602249
+Elapsed time: 65.5770859718
+Average number of overlapping bounding boxes from RPN = 45.42 for 50 previous iterations
+Epoch 155:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.4
+Classifier accuracy for bounding boxes from RPN: 0.824375
+Loss RPN classifier: 0.0912832061481
+Loss RPN regression: 0.108939084932
+Loss Classifier classifier: 0.443148608506
+Loss Classifier regression: 0.277974892259
+Elapsed time: 65.2278048992
+7800 times
+Average number of overlapping bounding boxes from RPN = 44.4 for 50 previous iterations
+Epoch 156:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.86
+Classifier accuracy for bounding boxes from RPN: 0.805625
+Loss RPN classifier: 0.0907018349599
+Loss RPN regression: 0.114927602038
+Loss Classifier classifier: 0.451133401394
+Loss Classifier regression: 0.292681944519
+Elapsed time: 66.557639122
+Average number of overlapping bounding boxes from RPN = 46.86 for 50 previous iterations
+Epoch 157:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.18
+Classifier accuracy for bounding boxes from RPN: 0.81
+Loss RPN classifier: 0.0866054681037
+Loss RPN regression: 0.134877037182
+Loss Classifier classifier: 0.47274861455
+Loss Classifier regression: 0.309652255476
+Elapsed time: 67.1451170444
+7900 times
+Average number of overlapping bounding boxes from RPN = 46.18 for 50 previous iterations
+Epoch 158:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.1
+Classifier accuracy for bounding boxes from RPN: 0.821875
+Loss RPN classifier: 0.0789820508007
+Loss RPN regression: 0.11577649124
+Loss Classifier classifier: 0.418416056633
+Loss Classifier regression: 0.307251497656
+Elapsed time: 65.4224829674
+Average number of overlapping bounding boxes from RPN = 45.1 for 50 previous iterations
+Epoch 159:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 48.44
+Classifier accuracy for bounding boxes from RPN: 0.82375
+Loss RPN classifier: 0.0654176291823
+Loss RPN regression: 0.105337427929
+Loss Classifier classifier: 0.415600178242
+Loss Classifier regression: 0.293639494181
+Elapsed time: 67.4020221233
+Total loss decreased from 0.915351378452 to 0.879994729534, saving weights
+8000 times
+Average number of overlapping bounding boxes from RPN = 48.44 for 50 previous iterations
+Epoch 160:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.66
+Classifier accuracy for bounding boxes from RPN: 0.8225
+Loss RPN classifier: 0.0883081622794
+Loss RPN regression: 0.113031960726
+Loss Classifier classifier: 0.422596510053
+Loss Classifier regression: 0.29590162605
+Elapsed time: 66.3608949184
+Average number of overlapping bounding boxes from RPN = 45.66 for 50 previous iterations
+Epoch 161:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.94
+Classifier accuracy for bounding boxes from RPN: 0.819375
+Loss RPN classifier: 0.0797784958407
+Loss RPN regression: 0.115059226751
+Loss Classifier classifier: 0.42726690501
+Loss Classifier regression: 0.286686500311
+Elapsed time: 65.6656730175
+8100 times
+Average number of overlapping bounding boxes from RPN = 45.94 for 50 previous iterations
+Epoch 162:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.72
+Classifier accuracy for bounding boxes from RPN: 0.810625
+Loss RPN classifier: 0.0591575265629
+Loss RPN regression: 0.124705451056
+Loss Classifier classifier: 0.497465003729
+Loss Classifier regression: 0.291165194511
+Elapsed time: 65.6872158051
+Average number of overlapping bounding boxes from RPN = 46.72 for 50 previous iterations
+Epoch 163:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.86
+Classifier accuracy for bounding boxes from RPN: 0.8375
+Loss RPN classifier: 0.0707741217222
+Loss RPN regression: 0.10689224638
+Loss Classifier classifier: 0.418631846756
+Loss Classifier regression: 0.285241335183
+Elapsed time: 65.5857789516
+8200 times
+Average number of overlapping bounding boxes from RPN = 46.86 for 50 previous iterations
+Epoch 164:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.76
+Classifier accuracy for bounding boxes from RPN: 0.805
+Loss RPN classifier: 0.071521109743
+Loss RPN regression: 0.118282509372
+Loss Classifier classifier: 0.436630906761
+Loss Classifier regression: 0.273456222117
+Elapsed time: 65.0469529629
+Average number of overlapping bounding boxes from RPN = 44.76 for 50 previous iterations
+Epoch 165:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.54
+Classifier accuracy for bounding boxes from RPN: 0.800625
+Loss RPN classifier: 0.0583066253364
+Loss RPN regression: 0.112483486161
+Loss Classifier classifier: 0.460609493852
+Loss Classifier regression: 0.288529714197
+Elapsed time: 66.2173018456
+8300 times
+Average number of overlapping bounding boxes from RPN = 45.54 for 50 previous iterations
+Epoch 166:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.0
+Classifier accuracy for bounding boxes from RPN: 0.8075
+Loss RPN classifier: 0.0717840440571
+Loss RPN regression: 0.109936702326
+Loss Classifier classifier: 0.454861415923
+Loss Classifier regression: 0.290919589996
+Elapsed time: 66.384912014
+Average number of overlapping bounding boxes from RPN = 47.0 for 50 previous iterations
+Epoch 167:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.98
+Classifier accuracy for bounding boxes from RPN: 0.808125
+Loss RPN classifier: 0.0884739843477
+Loss RPN regression: 0.107412657142
+Loss Classifier classifier: 0.432218435407
+Loss Classifier regression: 0.291628532112
+Elapsed time: 64.8675560951
+8400 times
+Average number of overlapping bounding boxes from RPN = 44.98 for 50 previous iterations
+Epoch 168:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.0
+Classifier accuracy for bounding boxes from RPN: 0.820625
+Loss RPN classifier: 0.092456723908
+Loss RPN regression: 0.0972218348831
+Loss Classifier classifier: 0.427437810302
+Loss Classifier regression: 0.282948194146
+Elapsed time: 64.5445790291
+Average number of overlapping bounding boxes from RPN = 43.0 for 50 previous iterations
+Epoch 169:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.86
+Classifier accuracy for bounding boxes from RPN: 0.8275
+Loss RPN classifier: 0.0645712652802
+Loss RPN regression: 0.11493608512
+Loss Classifier classifier: 0.440696825087
+Loss Classifier regression: 0.284060314447
+Elapsed time: 66.6056199074
+8500 times
+Average number of overlapping bounding boxes from RPN = 45.86 for 50 previous iterations
+Epoch 170:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.72
+Classifier accuracy for bounding boxes from RPN: 0.809375
+Loss RPN classifier: 0.0826788934786
+Loss RPN regression: 0.0948807871342
+Loss Classifier classifier: 0.466727815568
+Loss Classifier regression: 0.285349287689
+Elapsed time: 65.8263251781
+Average number of overlapping bounding boxes from RPN = 46.72 for 50 previous iterations
+Epoch 171:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.1
+Classifier accuracy for bounding boxes from RPN: 0.831875
+Loss RPN classifier: 0.0729447055655
+Loss RPN regression: 0.105591190457
+Loss Classifier classifier: 0.400899686813
+Loss Classifier regression: 0.270520152748
+Elapsed time: 64.9617419243
+Total loss decreased from 0.879994729534 to 0.849955735584, saving weights
+8600 times
+Average number of overlapping bounding boxes from RPN = 46.1 for 50 previous iterations
+Epoch 172:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.06
+Classifier accuracy for bounding boxes from RPN: 0.810625
+Loss RPN classifier: 0.079675391037
+Loss RPN regression: 0.106774669141
+Loss Classifier classifier: 0.459982942641
+Loss Classifier regression: 0.28692047894
+Elapsed time: 67.0194218159
+Average number of overlapping bounding boxes from RPN = 45.06 for 50 previous iterations
+Epoch 173:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.34
+Classifier accuracy for bounding boxes from RPN: 0.823125
+Loss RPN classifier: 0.0996687232179
+Loss RPN regression: 0.112806952372
+Loss Classifier classifier: 0.424544405341
+Loss Classifier regression: 0.286954527199
+Elapsed time: 65.0808479786
+8700 times
+Average number of overlapping bounding boxes from RPN = 43.34 for 50 previous iterations
+Epoch 174:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.4
+Classifier accuracy for bounding boxes from RPN: 0.811875
+Loss RPN classifier: 0.0859561314899
+Loss RPN regression: 0.11341929689
+Loss Classifier classifier: 0.440000714958
+Loss Classifier regression: 0.279314014018
+Elapsed time: 65.7166259289
+Average number of overlapping bounding boxes from RPN = 44.4 for 50 previous iterations
+Epoch 175:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.04
+Classifier accuracy for bounding boxes from RPN: 0.814375
+Loss RPN classifier: 0.059974808502
+Loss RPN regression: 0.126713231355
+Loss Classifier classifier: 0.431943061054
+Loss Classifier regression: 0.296311610937
+Elapsed time: 66.0496079922
+8800 times
+Average number of overlapping bounding boxes from RPN = 46.04 for 50 previous iterations
+Epoch 176:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.28
+Classifier accuracy for bounding boxes from RPN: 0.820625
+Loss RPN classifier: 0.0580051351991
+Loss RPN regression: 0.117027365789
+Loss Classifier classifier: 0.445290470421
+Loss Classifier regression: 0.285176544189
+Elapsed time: 65.2335300446
+Average number of overlapping bounding boxes from RPN = 45.28 for 50 previous iterations
+Epoch 177:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.86
+Classifier accuracy for bounding boxes from RPN: 0.8125
+Loss RPN classifier: 0.0650971097685
+Loss RPN regression: 0.102395249754
+Loss Classifier classifier: 0.468337354362
+Loss Classifier regression: 0.292506089509
+Elapsed time: 66.1573889256
+8900 times
+Average number of overlapping bounding boxes from RPN = 47.86 for 50 previous iterations
+Epoch 178:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.84
+Classifier accuracy for bounding boxes from RPN: 0.823125
+Loss RPN classifier: 0.0572118064482
+Loss RPN regression: 0.0983436831832
+Loss Classifier classifier: 0.43533546567
+Loss Classifier regression: 0.271679936647
+Elapsed time: 65.6224761009
+Average number of overlapping bounding boxes from RPN = 46.84 for 50 previous iterations
+Epoch 179:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.88
+Classifier accuracy for bounding boxes from RPN: 0.8
+Loss RPN classifier: 0.0685295951553
+Loss RPN regression: 0.132435788959
+Loss Classifier classifier: 0.49751809448
+Loss Classifier regression: 0.291975256503
+Elapsed time: 64.0923149586
+9000 times
+Average number of overlapping bounding boxes from RPN = 42.88 for 50 previous iterations
+Epoch 180:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.96
+Classifier accuracy for bounding boxes from RPN: 0.81625
+Loss RPN classifier: 0.0620373010123
+Loss RPN regression: 0.104491435625
+Loss Classifier classifier: 0.401901904643
+Loss Classifier regression: 0.277860488296
+Elapsed time: 66.5145740509
+Total loss decreased from 0.849955735584 to 0.846291129575, saving weights
+Average number of overlapping bounding boxes from RPN = 47.96 for 50 previous iterations
+Epoch 181:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.32
+Classifier accuracy for bounding boxes from RPN: 0.82125
+Loss RPN classifier: 0.066024734159
+Loss RPN regression: 0.0967691826075
+Loss Classifier classifier: 0.43437597692
+Loss Classifier regression: 0.283206255138
+Elapsed time: 66.685986042
+9100 times
+Average number of overlapping bounding boxes from RPN = 47.32 for 50 previous iterations
+Epoch 182:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.26
+Classifier accuracy for bounding boxes from RPN: 0.81625
+Loss RPN classifier: 0.0757035037968
+Loss RPN regression: 0.10033806134
+Loss Classifier classifier: 0.449210967571
+Loss Classifier regression: 0.281751727164
+Elapsed time: 65.3093409538
+Average number of overlapping bounding boxes from RPN = 46.26 for 50 previous iterations
+Epoch 183:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.18
+Classifier accuracy for bounding boxes from RPN: 0.825
+Loss RPN classifier: 0.0697789124819
+Loss RPN regression: 0.102900111526
+Loss Classifier classifier: 0.415518983603
+Loss Classifier regression: 0.278715603948
+Elapsed time: 65.4900989532
+9200 times
+Average number of overlapping bounding boxes from RPN = 46.18 for 50 previous iterations
+Epoch 184:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.74
+Classifier accuracy for bounding boxes from RPN: 0.815625
+Loss RPN classifier: 0.0553721067403
+Loss RPN regression: 0.106557583138
+Loss Classifier classifier: 0.445783597827
+Loss Classifier regression: 0.28590867281
+Elapsed time: 65.1790988445
+Average number of overlapping bounding boxes from RPN = 45.74 for 50 previous iterations
+Epoch 185:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.54
+Classifier accuracy for bounding boxes from RPN: 0.81875
+Loss RPN classifier: 0.0643635022268
+Loss RPN regression: 0.0970684792846
+Loss Classifier classifier: 0.42072458297
+Loss Classifier regression: 0.272387147993
+Elapsed time: 65.0036380291
+9300 times
+Average number of overlapping bounding boxes from RPN = 46.54 for 50 previous iterations
+Epoch 186:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.86
+Classifier accuracy for bounding boxes from RPN: 0.808125
+Loss RPN classifier: 0.0577788023371
+Loss RPN regression: 0.104481971338
+Loss Classifier classifier: 0.463832143545
+Loss Classifier regression: 0.280154415965
+Elapsed time: 65.6157400608
+Average number of overlapping bounding boxes from RPN = 45.86 for 50 previous iterations
+Epoch 187:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.9
+Classifier accuracy for bounding boxes from RPN: 0.815625
+Loss RPN classifier: 0.0674636472948
+Loss RPN regression: 0.0931810548902
+Loss Classifier classifier: 0.428639652133
+Loss Classifier regression: 0.273038154542
+Elapsed time: 66.0829541683
+9400 times
+Average number of overlapping bounding boxes from RPN = 46.9 for 50 previous iterations
+Epoch 188:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.3
+Classifier accuracy for bounding boxes from RPN: 0.82625
+Loss RPN classifier: 0.0530532318773
+Loss RPN regression: 0.106705465391
+Loss Classifier classifier: 0.424475919306
+Loss Classifier regression: 0.267139173746
+Elapsed time: 64.3891019821
+Average number of overlapping bounding boxes from RPN = 45.3 for 50 previous iterations
+Epoch 189:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.82
+Classifier accuracy for bounding boxes from RPN: 0.819375
+Loss RPN classifier: 0.0595567670232
+Loss RPN regression: 0.102420813739
+Loss Classifier classifier: 0.432662663907
+Loss Classifier regression: 0.285906985998
+Elapsed time: 65.8659520149
+9500 times
+Average number of overlapping bounding boxes from RPN = 45.82 for 50 previous iterations
+Epoch 190:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 48.3
+Classifier accuracy for bounding boxes from RPN: 0.825
+Loss RPN classifier: 0.0702301160246
+Loss RPN regression: 0.107138972506
+Loss Classifier classifier: 0.424453847408
+Loss Classifier regression: 0.289089494795
+Elapsed time: 65.036591053
+Average number of overlapping bounding boxes from RPN = 48.3 for 50 previous iterations
+Epoch 191:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.78
+Classifier accuracy for bounding boxes from RPN: 0.8525
+Loss RPN classifier: 0.0872784145456
+Loss RPN regression: 0.0909170134366
+Loss Classifier classifier: 0.374526908994
+Loss Classifier regression: 0.275986777544
+Elapsed time: 65.0003390312
+Total loss decreased from 0.846291129575 to 0.82870911452, saving weights
+9600 times
+Average number of overlapping bounding boxes from RPN = 45.78 for 50 previous iterations
+Epoch 192:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.96
+Classifier accuracy for bounding boxes from RPN: 0.815
+Loss RPN classifier: 0.0667408998823
+Loss RPN regression: 0.0961482762173
+Loss Classifier classifier: 0.453478119373
+Loss Classifier regression: 0.265701427013
+Elapsed time: 66.8316309452
+Average number of overlapping bounding boxes from RPN = 46.96 for 50 previous iterations
+Epoch 193:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.8
+Classifier accuracy for bounding boxes from RPN: 0.82875
+Loss RPN classifier: 0.0873245090526
+Loss RPN regression: 0.109683107734
+Loss Classifier classifier: 0.417714232206
+Loss Classifier regression: 0.277871885002
+Elapsed time: 66.6052479744
+9700 times
+Average number of overlapping bounding boxes from RPN = 45.8 for 50 previous iterations
+Epoch 194:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 41.72
+Classifier accuracy for bounding boxes from RPN: 0.811875
+Loss RPN classifier: 0.0734434210788
+Loss RPN regression: 0.096564267315
+Loss Classifier classifier: 0.4507551983
+Loss Classifier regression: 0.268151405603
+Elapsed time: 65.1449291706
+Average number of overlapping bounding boxes from RPN = 41.72 for 50 previous iterations
+Epoch 195:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.82
+Classifier accuracy for bounding boxes from RPN: 0.8125
+Loss RPN classifier: 0.058280106904
+Loss RPN regression: 0.113562190682
+Loss Classifier classifier: 0.425152978152
+Loss Classifier regression: 0.280414343178
+Elapsed time: 66.798032999
+9800 times
+Average number of overlapping bounding boxes from RPN = 46.82 for 50 previous iterations
+Epoch 196:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.66
+Classifier accuracy for bounding boxes from RPN: 0.83375
+Loss RPN classifier: 0.0530708294688
+Loss RPN regression: 0.0947561427951
+Loss Classifier classifier: 0.41201608032
+Loss Classifier regression: 0.245949009508
+Elapsed time: 64.816740036
+Total loss decreased from 0.82870911452 to 0.805792062092, saving weights
+Average number of overlapping bounding boxes from RPN = 43.66 for 50 previous iterations
+Epoch 197:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.0
+Classifier accuracy for bounding boxes from RPN: 0.825625
+Loss RPN classifier: 0.0620364399068
+Loss RPN regression: 0.0947010900825
+Loss Classifier classifier: 0.425668396652
+Loss Classifier regression: 0.272179531157
+Elapsed time: 66.1905999184
+9900 times
+Average number of overlapping bounding boxes from RPN = 44.0 for 50 previous iterations
+Epoch 198:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.86
+Classifier accuracy for bounding boxes from RPN: 0.828125
+Loss RPN classifier: 0.0643590407493
+Loss RPN regression: 0.103413474783
+Loss Classifier classifier: 0.407433041632
+Loss Classifier regression: 0.271076586843
+Elapsed time: 66.1841230392
+Average number of overlapping bounding boxes from RPN = 43.86 for 50 previous iterations
+Epoch 199:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.5
+Classifier accuracy for bounding boxes from RPN: 0.826875
+Loss RPN classifier: 0.0568587397272
+Loss RPN regression: 0.0921395129338
+Loss Classifier classifier: 0.431331973374
+Loss Classifier regression: 0.258926851898
+Elapsed time: 65.0027909279
+10000 times
+Average number of overlapping bounding boxes from RPN = 46.5 for 50 previous iterations
+Epoch 200:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.76
+Classifier accuracy for bounding boxes from RPN: 0.835625
+Loss RPN classifier: 0.0877480127942
+Loss RPN regression: 0.103678627983
+Loss Classifier classifier: 0.420758307576
+Loss Classifier regression: 0.258088191301
+Elapsed time: 65.6356599331
+Average number of overlapping bounding boxes from RPN = 44.76 for 50 previous iterations
+Epoch 201:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.88
+Classifier accuracy for bounding boxes from RPN: 0.830625
+Loss RPN classifier: 0.0580004172493
+Loss RPN regression: 0.0887801469862
+Loss Classifier classifier: 0.382190005481
+Loss Classifier regression: 0.269465661645
+Elapsed time: 65.6528739929
+Total loss decreased from 0.805792062092 to 0.798436231362, saving weights
+10100 times
+Average number of overlapping bounding boxes from RPN = 45.88 for 50 previous iterations
+Epoch 202:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.64
+Classifier accuracy for bounding boxes from RPN: 0.835625
+Loss RPN classifier: 0.060073999702
+Loss RPN regression: 0.108674881309
+Loss Classifier classifier: 0.401429186463
+Loss Classifier regression: 0.276901881248
+Elapsed time: 66.7067501545
+Average number of overlapping bounding boxes from RPN = 45.64 for 50 previous iterations
+Epoch 203:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.96
+Classifier accuracy for bounding boxes from RPN: 0.819375
+Loss RPN classifier: 0.056701960268
+Loss RPN regression: 0.0841000276059
+Loss Classifier classifier: 0.427071003318
+Loss Classifier regression: 0.258680169582
+Elapsed time: 65.1862850189
+10200 times
+Average number of overlapping bounding boxes from RPN = 45.96 for 50 previous iterations
+Epoch 204:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.82
+Classifier accuracy for bounding boxes from RPN: 0.811875
+Loss RPN classifier: 0.0679071020009
+Loss RPN regression: 0.0969041276723
+Loss Classifier classifier: 0.457223623395
+Loss Classifier regression: 0.283936238587
+Elapsed time: 64.6064999104
+Average number of overlapping bounding boxes from RPN = 44.82 for 50 previous iterations
+Epoch 205:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.68
+Classifier accuracy for bounding boxes from RPN: 0.845
+Loss RPN classifier: 0.0477321927599
+Loss RPN regression: 0.0949842295796
+Loss Classifier classifier: 0.368447732627
+Loss Classifier regression: 0.247937012613
+Elapsed time: 66.4616580009
+Total loss decreased from 0.798436231362 to 0.75910116758, saving weights
+10300 times
+Average number of overlapping bounding boxes from RPN = 46.68 for 50 previous iterations
+Epoch 206:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.22
+Classifier accuracy for bounding boxes from RPN: 0.843125
+Loss RPN classifier: 0.0689526401577
+Loss RPN regression: 0.0835048403591
+Loss Classifier classifier: 0.370245746076
+Loss Classifier regression: 0.271156654358
+Elapsed time: 67.0711550713
+Average number of overlapping bounding boxes from RPN = 46.22 for 50 previous iterations
+Epoch 207:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.1
+Classifier accuracy for bounding boxes from RPN: 0.854375
+Loss RPN classifier: 0.0504401149414
+Loss RPN regression: 0.0863202727214
+Loss Classifier classifier: 0.372035265863
+Loss Classifier regression: 0.248854220062
+Elapsed time: 64.6273751259
+Total loss decreased from 0.75910116758 to 0.757649873588, saving weights
+10400 times
+Average number of overlapping bounding boxes from RPN = 44.1 for 50 previous iterations
+Epoch 208:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.02
+Classifier accuracy for bounding boxes from RPN: 0.81625
+Loss RPN classifier: 0.0576423085947
+Loss RPN regression: 0.089458322227
+Loss Classifier classifier: 0.408510953635
+Loss Classifier regression: 0.257438698858
+Elapsed time: 65.7786960602
+Average number of overlapping bounding boxes from RPN = 46.02 for 50 previous iterations
+Epoch 209:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.78
+Classifier accuracy for bounding boxes from RPN: 0.84625
+Loss RPN classifier: 0.0610633416055
+Loss RPN regression: 0.0859212533757
+Loss Classifier classifier: 0.414775221646
+Loss Classifier regression: 0.262136413455
+Elapsed time: 64.9521861076
+10500 times
+Average number of overlapping bounding boxes from RPN = 46.78 for 50 previous iterations
+Epoch 210:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.44
+Classifier accuracy for bounding boxes from RPN: 0.83875
+Loss RPN classifier: 0.0578697952256
+Loss RPN regression: 0.0966410947219
+Loss Classifier classifier: 0.394750678986
+Loss Classifier regression: 0.266704476178
+Elapsed time: 66.1215281487
+Average number of overlapping bounding boxes from RPN = 45.44 for 50 previous iterations
+Epoch 211:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.36
+Classifier accuracy for bounding boxes from RPN: 0.83625
+Loss RPN classifier: 0.0413377576508
+Loss RPN regression: 0.0887250302732
+Loss Classifier classifier: 0.401841192245
+Loss Classifier regression: 0.244345758408
+Elapsed time: 64.0567259789
+10600 times
+Average number of overlapping bounding boxes from RPN = 44.36 for 50 previous iterations
+Epoch 212:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.68
+Classifier accuracy for bounding boxes from RPN: 0.82875
+Loss RPN classifier: 0.051067129164
+Loss RPN regression: 0.0837346285582
+Loss Classifier classifier: 0.414185009003
+Loss Classifier regression: 0.256714376509
+Elapsed time: 65.3110740185
+Average number of overlapping bounding boxes from RPN = 46.68 for 50 previous iterations
+Epoch 213:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.8
+Classifier accuracy for bounding boxes from RPN: 0.84875
+Loss RPN classifier: 0.0475534079154
+Loss RPN regression: 0.0862524785846
+Loss Classifier classifier: 0.367708489299
+Loss Classifier regression: 0.249722415954
+Elapsed time: 65.5137150288
+Total loss decreased from 0.757649873588 to 0.751236791753, saving weights
+10700 times
+Average number of overlapping bounding boxes from RPN = 46.8 for 50 previous iterations
+Epoch 214:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.58
+Classifier accuracy for bounding boxes from RPN: 0.8325
+Loss RPN classifier: 0.0585405248357
+Loss RPN regression: 0.102826531529
+Loss Classifier classifier: 0.393572784662
+Loss Classifier regression: 0.270633613169
+Elapsed time: 65.0354371071
+Average number of overlapping bounding boxes from RPN = 44.58 for 50 previous iterations
+Epoch 215:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.72
+Classifier accuracy for bounding boxes from RPN: 0.825625
+Loss RPN classifier: 0.0645784250926
+Loss RPN regression: 0.0986854749173
+Loss Classifier classifier: 0.437069361061
+Loss Classifier regression: 0.262338693887
+Elapsed time: 65.941409111
+10800 times
+Average number of overlapping bounding boxes from RPN = 42.72 for 50 previous iterations
+Epoch 216:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.22
+Classifier accuracy for bounding boxes from RPN: 0.834375
+Loss RPN classifier: 0.0659144155262
+Loss RPN regression: 0.0892632853985
+Loss Classifier classifier: 0.422427597642
+Loss Classifier regression: 0.277944871485
+Elapsed time: 64.3721899986
+Average number of overlapping bounding boxes from RPN = 45.22 for 50 previous iterations
+Epoch 217:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.04
+Classifier accuracy for bounding boxes from RPN: 0.84375
+Loss RPN classifier: 0.0630788321514
+Loss RPN regression: 0.0889970657602
+Loss Classifier classifier: 0.362740863562
+Loss Classifier regression: 0.243868449926
+Elapsed time: 65.03784585
+10900 times
+Average number of overlapping bounding boxes from RPN = 43.04 for 50 previous iterations
+Epoch 218:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.38
+Classifier accuracy for bounding boxes from RPN: 0.85125
+Loss RPN classifier: 0.0565017131111
+Loss RPN regression: 0.0806333860382
+Loss Classifier classifier: 0.352909887433
+Loss Classifier regression: 0.23433877483
+Elapsed time: 65.8351578712
+Total loss decreased from 0.751236791753 to 0.724383761412, saving weights
+Average number of overlapping bounding boxes from RPN = 46.38 for 50 previous iterations
+Epoch 219:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.98
+Classifier accuracy for bounding boxes from RPN: 0.8375
+Loss RPN classifier: 0.0514160560723
+Loss RPN regression: 0.0889655334502
+Loss Classifier classifier: 0.417116465867
+Loss Classifier regression: 0.278995860219
+Elapsed time: 67.2663869858
+11000 times
+Average number of overlapping bounding boxes from RPN = 44.98 for 50 previous iterations
+Epoch 220:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.48
+Classifier accuracy for bounding boxes from RPN: 0.849375
+Loss RPN classifier: 0.0613436513697
+Loss RPN regression: 0.0982300719619
+Loss Classifier classifier: 0.392108341157
+Loss Classifier regression: 0.244658488631
+Elapsed time: 63.9120509624
+Average number of overlapping bounding boxes from RPN = 43.48 for 50 previous iterations
+Epoch 221:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.46
+Classifier accuracy for bounding boxes from RPN: 0.845
+Loss RPN classifier: 0.0616176824458
+Loss RPN regression: 0.0994285883754
+Loss Classifier classifier: 0.390866267085
+Loss Classifier regression: 0.265588742197
+Elapsed time: 65.9164581299
+11100 times
+Average number of overlapping bounding boxes from RPN = 42.46 for 50 previous iterations
+Epoch 222:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.8
+Classifier accuracy for bounding boxes from RPN: 0.82875
+Loss RPN classifier: 0.0456575619569
+Loss RPN regression: 0.0760989471525
+Loss Classifier classifier: 0.390575913191
+Loss Classifier regression: 0.257013567388
+Elapsed time: 65.2310750484
+Average number of overlapping bounding boxes from RPN = 47.8 for 50 previous iterations
+Epoch 223:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.52
+Classifier accuracy for bounding boxes from RPN: 0.815625
+Loss RPN classifier: 0.0724040280655
+Loss RPN regression: 0.0824697691947
+Loss Classifier classifier: 0.431179631352
+Loss Classifier regression: 0.25543720305
+Elapsed time: 66.1662299633
+11200 times
+Average number of overlapping bounding boxes from RPN = 45.52 for 50 previous iterations
+Epoch 224:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.72
+Classifier accuracy for bounding boxes from RPN: 0.8475
+Loss RPN classifier: 0.0435777224181
+Loss RPN regression: 0.0811195968091
+Loss Classifier classifier: 0.387094938755
+Loss Classifier regression: 0.248168463111
+Elapsed time: 65.3261630535
+Average number of overlapping bounding boxes from RPN = 43.72 for 50 previous iterations
+Epoch 225:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.38
+Classifier accuracy for bounding boxes from RPN: 0.848125
+Loss RPN classifier: 0.0534857009538
+Loss RPN regression: 0.0783067555353
+Loss Classifier classifier: 0.34700284034
+Loss Classifier regression: 0.244802727401
+Elapsed time: 65.000524044
+Total loss decreased from 0.724383761412 to 0.72359802423, saving weights
+11300 times
+Average number of overlapping bounding boxes from RPN = 44.38 for 50 previous iterations
+Epoch 226:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.9
+Classifier accuracy for bounding boxes from RPN: 0.8475
+Loss RPN classifier: 0.0493403296545
+Loss RPN regression: 0.0898438259214
+Loss Classifier classifier: 0.39579669714
+Loss Classifier regression: 0.239489441663
+Elapsed time: 65.7643380165
+Average number of overlapping bounding boxes from RPN = 43.9 for 50 previous iterations
+Epoch 227:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.36
+Classifier accuracy for bounding boxes from RPN: 0.835625
+Loss RPN classifier: 0.0457943983981
+Loss RPN regression: 0.0801359145343
+Loss Classifier classifier: 0.389124057591
+Loss Classifier regression: 0.241747584492
+Elapsed time: 64.9035089016
+11400 times
+Average number of overlapping bounding boxes from RPN = 45.36 for 50 previous iterations
+Epoch 228:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.88
+Classifier accuracy for bounding boxes from RPN: 0.843125
+Loss RPN classifier: 0.0505701489467
+Loss RPN regression: 0.0781338699907
+Loss Classifier classifier: 0.359252000749
+Loss Classifier regression: 0.244164393842
+Elapsed time: 65.8606059551
+Average number of overlapping bounding boxes from RPN = 45.88 for 50 previous iterations
+Epoch 229:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.76
+Classifier accuracy for bounding boxes from RPN: 0.835625
+Loss RPN classifier: 0.0492337366624
+Loss RPN regression: 0.0874040689692
+Loss Classifier classifier: 0.399989944398
+Loss Classifier regression: 0.236246225238
+Elapsed time: 64.0485651493
+11500 times
+Average number of overlapping bounding boxes from RPN = 44.76 for 50 previous iterations
+Epoch 230:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.62
+Classifier accuracy for bounding boxes from RPN: 0.8375
+Loss RPN classifier: 0.0624415967753
+Loss RPN regression: 0.0833932168037
+Loss Classifier classifier: 0.389185056984
+Loss Classifier regression: 0.247779205441
+Elapsed time: 66.1285510063
+Average number of overlapping bounding boxes from RPN = 44.62 for 50 previous iterations
+Epoch 231:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 47.36
+Classifier accuracy for bounding boxes from RPN: 0.83125
+Loss RPN classifier: 0.0441191277467
+Loss RPN regression: 0.0777510451525
+Loss Classifier classifier: 0.402710023224
+Loss Classifier regression: 0.23275247559
+Elapsed time: 65.5899710655
+11600 times
+Average number of overlapping bounding boxes from RPN = 47.36 for 50 previous iterations
+Epoch 232:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 48.16
+Classifier accuracy for bounding boxes from RPN: 0.85
+Loss RPN classifier: 0.0761630120128
+Loss RPN regression: 0.070348778367
+Loss Classifier classifier: 0.369162351042
+Loss Classifier regression: 0.234540310651
+Elapsed time: 66.0519189835
+Average number of overlapping bounding boxes from RPN = 48.16 for 50 previous iterations
+Epoch 233:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.46
+Classifier accuracy for bounding boxes from RPN: 0.833125
+Loss RPN classifier: 0.0573256643722
+Loss RPN regression: 0.085455972366
+Loss Classifier classifier: 0.415521151423
+Loss Classifier regression: 0.243741670996
+Elapsed time: 65.3320178986
+11700 times
+Average number of overlapping bounding boxes from RPN = 42.46 for 50 previous iterations
+Epoch 234:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.64
+Classifier accuracy for bounding boxes from RPN: 0.839375
+Loss RPN classifier: 0.0639571887907
+Loss RPN regression: 0.0781297380477
+Loss Classifier classifier: 0.388225849122
+Loss Classifier regression: 0.248098482043
+Elapsed time: 65.8067650795
+Average number of overlapping bounding boxes from RPN = 45.64 for 50 previous iterations
+Epoch 235:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.32
+Classifier accuracy for bounding boxes from RPN: 0.81875
+Loss RPN classifier: 0.0442117269104
+Loss RPN regression: 0.0999349881709
+Loss Classifier classifier: 0.419526086152
+Loss Classifier regression: 0.233759951144
+Elapsed time: 65.483631134
+11800 times
+Average number of overlapping bounding boxes from RPN = 43.32 for 50 previous iterations
+Epoch 236:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.94
+Classifier accuracy for bounding boxes from RPN: 0.8325
+Loss RPN classifier: 0.0607962753903
+Loss RPN regression: 0.0737402530387
+Loss Classifier classifier: 0.383561111689
+Loss Classifier regression: 0.237701267302
+Elapsed time: 64.5027351379
+Average number of overlapping bounding boxes from RPN = 43.94 for 50 previous iterations
+Epoch 237:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.56
+Classifier accuracy for bounding boxes from RPN: 0.834375
+Loss RPN classifier: 0.0513404114882
+Loss RPN regression: 0.0743533538654
+Loss Classifier classifier: 0.37040338248
+Loss Classifier regression: 0.242014963776
+Elapsed time: 66.1858141422
+11900 times
+Average number of overlapping bounding boxes from RPN = 45.56 for 50 previous iterations
+Epoch 238:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.26
+Classifier accuracy for bounding boxes from RPN: 0.835625
+Loss RPN classifier: 0.0537425656198
+Loss RPN regression: 0.0972585083172
+Loss Classifier classifier: 0.392150965035
+Loss Classifier regression: 0.260145162642
+Elapsed time: 65.7137560844
+Average number of overlapping bounding boxes from RPN = 44.26 for 50 previous iterations
+Epoch 239:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.36
+Classifier accuracy for bounding boxes from RPN: 0.843125
+Loss RPN classifier: 0.0544759990601
+Loss RPN regression: 0.0764046151936
+Loss Classifier classifier: 0.354358422458
+Loss Classifier regression: 0.238978274763
+Elapsed time: 64.530313015
+12000 times
+Average number of overlapping bounding boxes from RPN = 42.36 for 50 previous iterations
+Epoch 240:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.4
+Classifier accuracy for bounding boxes from RPN: 0.845625
+Loss RPN classifier: 0.0710112116183
+Loss RPN regression: 0.0791950648278
+Loss Classifier classifier: 0.371972847581
+Loss Classifier regression: 0.253854906559
+Elapsed time: 64.6661779881
+Average number of overlapping bounding boxes from RPN = 45.4 for 50 previous iterations
+Epoch 241:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.26
+Classifier accuracy for bounding boxes from RPN: 0.84875
+Loss RPN classifier: 0.0529701246135
+Loss RPN regression: 0.0889958170056
+Loss Classifier classifier: 0.379886857271
+Loss Classifier regression: 0.238172009289
+Elapsed time: 65.0447039604
+12100 times
+Average number of overlapping bounding boxes from RPN = 44.26 for 50 previous iterations
+Epoch 242:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.5
+Classifier accuracy for bounding boxes from RPN: 0.8525
+Loss RPN classifier: 0.0445923687494
+Loss RPN regression: 0.0693525193259
+Loss Classifier classifier: 0.354727212638
+Loss Classifier regression: 0.240884834975
+Elapsed time: 64.7534279823
+Total loss decreased from 0.72359802423 to 0.709556935688, saving weights
+Average number of overlapping bounding boxes from RPN = 46.5 for 50 previous iterations
+Epoch 243:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.16
+Classifier accuracy for bounding boxes from RPN: 0.83625
+Loss RPN classifier: 0.0584016924025
+Loss RPN regression: 0.080513731353
+Loss Classifier classifier: 0.381964250505
+Loss Classifier regression: 0.243357290924
+Elapsed time: 66.8809230328
+12200 times
+Average number of overlapping bounding boxes from RPN = 44.16 for 50 previous iterations
+Epoch 244:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.06
+Classifier accuracy for bounding boxes from RPN: 0.843125
+Loss RPN classifier: 0.0437062931783
+Loss RPN regression: 0.0845604409277
+Loss Classifier classifier: 0.398238405436
+Loss Classifier regression: 0.239045025259
+Elapsed time: 65.8310761452
+Average number of overlapping bounding boxes from RPN = 45.06 for 50 previous iterations
+Epoch 245:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.14
+Classifier accuracy for bounding boxes from RPN: 0.831875
+Loss RPN classifier: 0.0721708221827
+Loss RPN regression: 0.0714492462203
+Loss Classifier classifier: 0.378194997013
+Loss Classifier regression: 0.244754558057
+Elapsed time: 64.8622310162
+12300 times
+Average number of overlapping bounding boxes from RPN = 45.14 for 50 previous iterations
+Epoch 246:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.12
+Classifier accuracy for bounding boxes from RPN: 0.839375
+Loss RPN classifier: 0.0433355611307
+Loss RPN regression: 0.0841501602903
+Loss Classifier classifier: 0.389786351621
+Loss Classifier regression: 0.229732143283
+Elapsed time: 64.6610488892
+Average number of overlapping bounding boxes from RPN = 45.12 for 50 previous iterations
+Epoch 247:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.16
+Classifier accuracy for bounding boxes from RPN: 0.8275
+Loss RPN classifier: 0.0693852134701
+Loss RPN regression: 0.0748900317401
+Loss Classifier classifier: 0.430386334062
+Loss Classifier regression: 0.255619654506
+Elapsed time: 65.9209799767
+12400 times
+Average number of overlapping bounding boxes from RPN = 46.16 for 50 previous iterations
+Epoch 248:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.9
+Classifier accuracy for bounding boxes from RPN: 0.848125
+Loss RPN classifier: 0.0558545969054
+Loss RPN regression: 0.0749900744855
+Loss Classifier classifier: 0.369320531785
+Loss Classifier regression: 0.220175596625
+Elapsed time: 66.1998410225
+Average number of overlapping bounding boxes from RPN = 46.9 for 50 previous iterations
+Epoch 249:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.4
+Classifier accuracy for bounding boxes from RPN: 0.84
+Loss RPN classifier: 0.0367356685828
+Loss RPN regression: 0.0786618354544
+Loss Classifier classifier: 0.358616016507
+Loss Classifier regression: 0.215421738178
+Elapsed time: 64.9740641117
+Total loss decreased from 0.709556935688 to 0.689435258722, saving weights
+12500 times
+Average number of overlapping bounding boxes from RPN = 43.4 for 50 previous iterations
+Epoch 250:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.66
+Classifier accuracy for bounding boxes from RPN: 0.85875
+Loss RPN classifier: 0.044227533876
+Loss RPN regression: 0.0727623655275
+Loss Classifier classifier: 0.373499952853
+Loss Classifier regression: 0.240564550608
+Elapsed time: 66.8477189541
+Average number of overlapping bounding boxes from RPN = 44.66 for 50 previous iterations
+Epoch 251:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.52
+Classifier accuracy for bounding boxes from RPN: 0.856875
+Loss RPN classifier: 0.0437617753388
+Loss RPN regression: 0.0707656464726
+Loss Classifier classifier: 0.354650880694
+Loss Classifier regression: 0.232494668961
+Elapsed time: 64.716137886
+12600 times
+Average number of overlapping bounding boxes from RPN = 45.52 for 50 previous iterations
+Epoch 252:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.22
+Classifier accuracy for bounding boxes from RPN: 0.8575
+Loss RPN classifier: 0.0643018477969
+Loss RPN regression: 0.0844970132411
+Loss Classifier classifier: 0.361026838124
+Loss Classifier regression: 0.224648638219
+Elapsed time: 63.7591559887
+Average number of overlapping bounding boxes from RPN = 42.22 for 50 previous iterations
+Epoch 253:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.08
+Classifier accuracy for bounding boxes from RPN: 0.840625
+Loss RPN classifier: 0.0490449723555
+Loss RPN regression: 0.073312676847
+Loss Classifier classifier: 0.371533481479
+Loss Classifier regression: 0.237462677211
+Elapsed time: 64.0762047768
+12700 times
+Average number of overlapping bounding boxes from RPN = 45.08 for 50 previous iterations
+Epoch 254:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.44
+Classifier accuracy for bounding boxes from RPN: 0.86
+Loss RPN classifier: 0.0495312707499
+Loss RPN regression: 0.0798154974729
+Loss Classifier classifier: 0.368485589623
+Loss Classifier regression: 0.24076669395
+Elapsed time: 65.7269370556
+Average number of overlapping bounding boxes from RPN = 43.44 for 50 previous iterations
+Epoch 255:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.74
+Classifier accuracy for bounding boxes from RPN: 0.853125
+Loss RPN classifier: 0.0458567482792
+Loss RPN regression: 0.0750452563167
+Loss Classifier classifier: 0.356497392654
+Loss Classifier regression: 0.252764094919
+Elapsed time: 64.791118145
+12800 times
+Average number of overlapping bounding boxes from RPN = 43.74 for 50 previous iterations
+Epoch 256:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.9
+Classifier accuracy for bounding boxes from RPN: 0.8375
+Loss RPN classifier: 0.0485081868013
+Loss RPN regression: 0.0619244582206
+Loss Classifier classifier: 0.368566831127
+Loss Classifier regression: 0.228407378495
+Elapsed time: 65.1236679554
+Average number of overlapping bounding boxes from RPN = 45.9 for 50 previous iterations
+Epoch 257:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.88
+Classifier accuracy for bounding boxes from RPN: 0.849375
+Loss RPN classifier: 0.0524867568491
+Loss RPN regression: 0.0861982031912
+Loss Classifier classifier: 0.373804976046
+Loss Classifier regression: 0.2469137007
+Elapsed time: 65.7851490974
+12900 times
+Average number of overlapping bounding boxes from RPN = 42.88 for 50 previous iterations
+Epoch 258:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.58
+Classifier accuracy for bounding boxes from RPN: 0.83375
+Loss RPN classifier: 0.0331830097456
+Loss RPN regression: 0.0755787652358
+Loss Classifier classifier: 0.373231708705
+Loss Classifier regression: 0.232010619789
+Elapsed time: 65.2064230442
+Average number of overlapping bounding boxes from RPN = 44.58 for 50 previous iterations
+Epoch 259:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.94
+Classifier accuracy for bounding boxes from RPN: 0.836875
+Loss RPN classifier: 0.0299825957604
+Loss RPN regression: 0.0725202587247
+Loss Classifier classifier: 0.383371267915
+Loss Classifier regression: 0.230525248647
+Elapsed time: 64.9601659775
+13000 times
+Average number of overlapping bounding boxes from RPN = 42.94 for 50 previous iterations
+Epoch 260:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.74
+Classifier accuracy for bounding boxes from RPN: 0.861875
+Loss RPN classifier: 0.0506818658486
+Loss RPN regression: 0.0790941724554
+Loss Classifier classifier: 0.347380265594
+Loss Classifier regression: 0.220956018418
+Elapsed time: 66.401679039
+Average number of overlapping bounding boxes from RPN = 42.74 for 50 previous iterations
+Epoch 261:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.68
+Classifier accuracy for bounding boxes from RPN: 0.86
+Loss RPN classifier: 0.0497558294842
+Loss RPN regression: 0.068261487633
+Loss Classifier classifier: 0.347650037706
+Loss Classifier regression: 0.23569602266
+Elapsed time: 66.399338007
+13100 times
+Average number of overlapping bounding boxes from RPN = 44.68 for 50 previous iterations
+Epoch 262:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.36
+Classifier accuracy for bounding boxes from RPN: 0.83625
+Loss RPN classifier: 0.0411699927691
+Loss RPN regression: 0.0695227270946
+Loss Classifier classifier: 0.37559389472
+Loss Classifier regression: 0.235415504426
+Elapsed time: 64.6009581089
+Average number of overlapping bounding boxes from RPN = 44.36 for 50 previous iterations
+Epoch 263:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.68
+Classifier accuracy for bounding boxes from RPN: 0.833125
+Loss RPN classifier: 0.0494237951469
+Loss RPN regression: 0.067021977976
+Loss Classifier classifier: 0.36906589061
+Loss Classifier regression: 0.225856411755
+Elapsed time: 65.150976181
+13200 times
+Average number of overlapping bounding boxes from RPN = 44.68 for 50 previous iterations
+Epoch 264:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.4
+Classifier accuracy for bounding boxes from RPN: 0.875625
+Loss RPN classifier: 0.0493954561162
+Loss RPN regression: 0.0677211185917
+Loss Classifier classifier: 0.316371560246
+Loss Classifier regression: 0.237917679846
+Elapsed time: 63.8497240543
+Total loss decreased from 0.689435258722 to 0.6714058148, saving weights
+Average number of overlapping bounding boxes from RPN = 42.4 for 50 previous iterations
+Epoch 265:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.68
+Classifier accuracy for bounding boxes from RPN: 0.855625
+Loss RPN classifier: 0.0532536112447
+Loss RPN regression: 0.0727467536181
+Loss Classifier classifier: 0.354397814274
+Loss Classifier regression: 0.224568846226
+Elapsed time: 67.3040652275
+13300 times
+Average number of overlapping bounding boxes from RPN = 43.68 for 50 previous iterations
+Epoch 266:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.12
+Classifier accuracy for bounding boxes from RPN: 0.8625
+Loss RPN classifier: 0.0524312921334
+Loss RPN regression: 0.0727986558527
+Loss Classifier classifier: 0.336598728895
+Loss Classifier regression: 0.221529144198
+Elapsed time: 66.4464299679
+Average number of overlapping bounding boxes from RPN = 42.12 for 50 previous iterations
+Epoch 267:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.22
+Classifier accuracy for bounding boxes from RPN: 0.850625
+Loss RPN classifier: 0.0384347818047
+Loss RPN regression: 0.0747586524487
+Loss Classifier classifier: 0.354687104523
+Loss Classifier regression: 0.235663922727
+Elapsed time: 65.3044929504
+13400 times
+Average number of overlapping bounding boxes from RPN = 46.22 for 50 previous iterations
+Epoch 268:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.34
+Classifier accuracy for bounding boxes from RPN: 0.86125
+Loss RPN classifier: 0.0406267679553
+Loss RPN regression: 0.0774354911968
+Loss Classifier classifier: 0.327394397855
+Loss Classifier regression: 0.215769444108
+Elapsed time: 64.3623011112
+Total loss decreased from 0.6714058148 to 0.661226101115, saving weights
+Average number of overlapping bounding boxes from RPN = 43.34 for 50 previous iterations
+Epoch 269:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.96
+Classifier accuracy for bounding boxes from RPN: 0.844375
+Loss RPN classifier: 0.0469959236262
+Loss RPN regression: 0.0652297741175
+Loss Classifier classifier: 0.387202091217
+Loss Classifier regression: 0.23556960851
+Elapsed time: 64.4088938236
+13500 times
+Average number of overlapping bounding boxes from RPN = 44.96 for 50 previous iterations
+Epoch 270:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.7
+Classifier accuracy for bounding boxes from RPN: 0.813125
+Loss RPN classifier: 0.0502714228397
+Loss RPN regression: 0.0787898220494
+Loss Classifier classifier: 0.473152835965
+Loss Classifier regression: 0.246484342963
+Elapsed time: 64.3792920113
+Average number of overlapping bounding boxes from RPN = 46.7 for 50 previous iterations
+Epoch 271:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.6
+Classifier accuracy for bounding boxes from RPN: 0.84875
+Loss RPN classifier: 0.0354581697145
+Loss RPN regression: 0.0674355082959
+Loss Classifier classifier: 0.351078875959
+Loss Classifier regression: 0.207291278988
+Elapsed time: 65.2789821625
+13600 times
+Average number of overlapping bounding boxes from RPN = 44.6 for 50 previous iterations
+Epoch 272:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.26
+Classifier accuracy for bounding boxes from RPN: 0.8525
+Loss RPN classifier: 0.0446969252918
+Loss RPN regression: 0.0646360924095
+Loss Classifier classifier: 0.376931525469
+Loss Classifier regression: 0.225684342235
+Elapsed time: 66.115489006
+Average number of overlapping bounding boxes from RPN = 45.26 for 50 previous iterations
+Epoch 273:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.94
+Classifier accuracy for bounding boxes from RPN: 0.83625
+Loss RPN classifier: 0.0299733887269
+Loss RPN regression: 0.0808613620326
+Loss Classifier classifier: 0.383644898236
+Loss Classifier regression: 0.223835161179
+Elapsed time: 64.4235570431
+13700 times
+Average number of overlapping bounding boxes from RPN = 42.94 for 50 previous iterations
+Epoch 274:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.9
+Classifier accuracy for bounding boxes from RPN: 0.8575
+Loss RPN classifier: 0.052525760734
+Loss RPN regression: 0.0724260445312
+Loss Classifier classifier: 0.332196569741
+Loss Classifier regression: 0.201999418288
+Elapsed time: 64.1328709126
+Total loss decreased from 0.661226101115 to 0.659147793294, saving weights
+Average number of overlapping bounding boxes from RPN = 42.9 for 50 previous iterations
+Epoch 275:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.5
+Classifier accuracy for bounding boxes from RPN: 0.850625
+Loss RPN classifier: 0.032548777787
+Loss RPN regression: 0.0646109879017
+Loss Classifier classifier: 0.377633333802
+Loss Classifier regression: 0.230210581273
+Elapsed time: 65.4884860516
+13800 times
+Average number of overlapping bounding boxes from RPN = 44.5 for 50 previous iterations
+Epoch 276:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.32
+Classifier accuracy for bounding boxes from RPN: 0.845625
+Loss RPN classifier: 0.0351303120528
+Loss RPN regression: 0.0638215398043
+Loss Classifier classifier: 0.343408954144
+Loss Classifier regression: 0.233218882829
+Elapsed time: 67.1514952183
+Average number of overlapping bounding boxes from RPN = 46.32 for 50 previous iterations
+Epoch 277:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.74
+Classifier accuracy for bounding boxes from RPN: 0.833125
+Loss RPN classifier: 0.0531942748732
+Loss RPN regression: 0.0808681743219
+Loss Classifier classifier: 0.401228449643
+Loss Classifier regression: 0.226929739714
+Elapsed time: 64.6717629433
+13900 times
+Average number of overlapping bounding boxes from RPN = 45.74 for 50 previous iterations
+Epoch 278:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.32
+Classifier accuracy for bounding boxes from RPN: 0.85875
+Loss RPN classifier: 0.0568876997544
+Loss RPN regression: 0.0726005283743
+Loss Classifier classifier: 0.330280108601
+Loss Classifier regression: 0.22937641874
+Elapsed time: 63.7030289173
+Average number of overlapping bounding boxes from RPN = 43.32 for 50 previous iterations
+Epoch 279:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.78
+Classifier accuracy for bounding boxes from RPN: 0.8475
+Loss RPN classifier: 0.0472069164691
+Loss RPN regression: 0.0717343673483
+Loss Classifier classifier: 0.346574090496
+Loss Classifier regression: 0.228267064691
+Elapsed time: 65.191986084
+14000 times
+Average number of overlapping bounding boxes from RPN = 44.78 for 50 previous iterations
+Epoch 280:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.52
+Classifier accuracy for bounding boxes from RPN: 0.844375
+Loss RPN classifier: 0.0562956867833
+Loss RPN regression: 0.0646666348726
+Loss Classifier classifier: 0.386201438606
+Loss Classifier regression: 0.222623476088
+Elapsed time: 64.6472239494
+Average number of overlapping bounding boxes from RPN = 43.52 for 50 previous iterations
+Epoch 281:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.08
+Classifier accuracy for bounding boxes from RPN: 0.850625
+Loss RPN classifier: 0.0455741070374
+Loss RPN regression: 0.0748521641269
+Loss Classifier classifier: 0.364512085021
+Loss Classifier regression: 0.214430179894
+Elapsed time: 65.4810819626
+14100 times
+Average number of overlapping bounding boxes from RPN = 45.08 for 50 previous iterations
+Epoch 282:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.52
+Classifier accuracy for bounding boxes from RPN: 0.855625
+Loss RPN classifier: 0.0480021709437
+Loss RPN regression: 0.0575094491802
+Loss Classifier classifier: 0.346389295757
+Loss Classifier regression: 0.230622551739
+Elapsed time: 64.8338429928
+Average number of overlapping bounding boxes from RPN = 45.52 for 50 previous iterations
+Epoch 283:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.6
+Classifier accuracy for bounding boxes from RPN: 0.84125
+Loss RPN classifier: 0.0377065279591
+Loss RPN regression: 0.0672833643481
+Loss Classifier classifier: 0.371650199294
+Loss Classifier regression: 0.210062745363
+Elapsed time: 63.9112679958
+14200 times
+Average number of overlapping bounding boxes from RPN = 42.6 for 50 previous iterations
+Epoch 284:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 46.42
+Classifier accuracy for bounding boxes from RPN: 0.8325
+Loss RPN classifier: 0.0388614638709
+Loss RPN regression: 0.0743075236306
+Loss Classifier classifier: 0.370018914044
+Loss Classifier regression: 0.214484366179
+Elapsed time: 64.65893507
+Average number of overlapping bounding boxes from RPN = 46.42 for 50 previous iterations
+Epoch 285:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.86
+Classifier accuracy for bounding boxes from RPN: 0.87125
+Loss RPN classifier: 0.0470892082341
+Loss RPN regression: 0.0564706489816
+Loss Classifier classifier: 0.32406593591
+Loss Classifier regression: 0.211310084313
+Elapsed time: 65.0293412209
+Total loss decreased from 0.659147793294 to 0.638935877439, saving weights
+14300 times
+Average number of overlapping bounding boxes from RPN = 44.86 for 50 previous iterations
+Epoch 286:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.34
+Classifier accuracy for bounding boxes from RPN: 0.868125
+Loss RPN classifier: 0.049375975118
+Loss RPN regression: 0.0681024593487
+Loss Classifier classifier: 0.352284679115
+Loss Classifier regression: 0.214836504608
+Elapsed time: 65.7296030521
+Average number of overlapping bounding boxes from RPN = 44.34 for 50 previous iterations
+Epoch 287:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.3
+Classifier accuracy for bounding boxes from RPN: 0.868125
+Loss RPN classifier: 0.0361218904029
+Loss RPN regression: 0.0638535586745
+Loss Classifier classifier: 0.312857149243
+Loss Classifier regression: 0.220345866382
+Elapsed time: 64.7115750313
+Total loss decreased from 0.638935877439 to 0.633178464703, saving weights
+14400 times
+Average number of overlapping bounding boxes from RPN = 45.3 for 50 previous iterations
+Epoch 288:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.0
+Classifier accuracy for bounding boxes from RPN: 0.838125
+Loss RPN classifier: 0.0517086523399
+Loss RPN regression: 0.0761290651932
+Loss Classifier classifier: 0.385717814863
+Loss Classifier regression: 0.237575223893
+Elapsed time: 66.3445589542
+Average number of overlapping bounding boxes from RPN = 43.0 for 50 previous iterations
+Epoch 289:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.0
+Classifier accuracy for bounding boxes from RPN: 0.86875
+Loss RPN classifier: 0.0305664142012
+Loss RPN regression: 0.0650162174553
+Loss Classifier classifier: 0.331223350316
+Loss Classifier regression: 0.206086412668
+Elapsed time: 64.2637159824
+Total loss decreased from 0.633178464703 to 0.632892394641, saving weights
+14500 times
+Average number of overlapping bounding boxes from RPN = 45.0 for 50 previous iterations
+Epoch 290:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.72
+Classifier accuracy for bounding boxes from RPN: 0.849375
+Loss RPN classifier: 0.0487592168245
+Loss RPN regression: 0.0547183263302
+Loss Classifier classifier: 0.356786846668
+Loss Classifier regression: 0.212484752536
+Elapsed time: 65.3026239872
+Average number of overlapping bounding boxes from RPN = 45.72 for 50 previous iterations
+Epoch 291:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.72
+Classifier accuracy for bounding boxes from RPN: 0.861875
+Loss RPN classifier: 0.0478598437889
+Loss RPN regression: 0.066344746761
+Loss Classifier classifier: 0.326978999078
+Loss Classifier regression: 0.214098465592
+Elapsed time: 65.5252718925
+14600 times
+Average number of overlapping bounding boxes from RPN = 43.72 for 50 previous iterations
+Epoch 292:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.5
+Classifier accuracy for bounding boxes from RPN: 0.84875
+Loss RPN classifier: 0.0334672502452
+Loss RPN regression: 0.0749382207543
+Loss Classifier classifier: 0.375625519156
+Loss Classifier regression: 0.224733032435
+Elapsed time: 64.2052919865
+Average number of overlapping bounding boxes from RPN = 42.5 for 50 previous iterations
+Epoch 293:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.94
+Classifier accuracy for bounding boxes from RPN: 0.854375
+Loss RPN classifier: 0.0396992163127
+Loss RPN regression: 0.0643821151555
+Loss Classifier classifier: 0.354523884952
+Loss Classifier regression: 0.227984503806
+Elapsed time: 65.5728588104
+14700 times
+Average number of overlapping bounding boxes from RPN = 43.94 for 50 previous iterations
+Epoch 294:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.12
+Classifier accuracy for bounding boxes from RPN: 0.84625
+Loss RPN classifier: 0.0412033520848
+Loss RPN regression: 0.0654696281627
+Loss Classifier classifier: 0.364382430315
+Loss Classifier regression: 0.210279253721
+Elapsed time: 65.4371590614
+Average number of overlapping bounding boxes from RPN = 45.12 for 50 previous iterations
+Epoch 295:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 45.3
+Classifier accuracy for bounding boxes from RPN: 0.855
+Loss RPN classifier: 0.0386096375622
+Loss RPN regression: 0.0638867354766
+Loss Classifier classifier: 0.358638837337
+Loss Classifier regression: 0.212246637046
+Elapsed time: 64.6029779911
+14800 times
+Average number of overlapping bounding boxes from RPN = 45.3 for 50 previous iterations
+Epoch 296:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 44.64
+Classifier accuracy for bounding boxes from RPN: 0.87
+Loss RPN classifier: 0.0514384221239
+Loss RPN regression: 0.0687238927931
+Loss Classifier classifier: 0.32260864526
+Loss Classifier regression: 0.211221773773
+Elapsed time: 65.0681791306
+Average number of overlapping bounding boxes from RPN = 44.64 for 50 previous iterations
+Epoch 297:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 42.92
+Classifier accuracy for bounding boxes from RPN: 0.845
+Loss RPN classifier: 0.0312692218664
+Loss RPN regression: 0.0586440480873
+Loss Classifier classifier: 0.355475521386
+Loss Classifier regression: 0.225705362111
+Elapsed time: 64.3021490574
+14900 times
+Average number of overlapping bounding boxes from RPN = 42.92 for 50 previous iterations
+Epoch 298:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.62
+Classifier accuracy for bounding boxes from RPN: 0.8475
+Loss RPN classifier: 0.0346428615379
+Loss RPN regression: 0.062381696701
+Loss Classifier classifier: 0.353997014314
+Loss Classifier regression: 0.212747942954
+Elapsed time: 64.7740170956
+Average number of overlapping bounding boxes from RPN = 43.62 for 50 previous iterations
+Epoch 299:
+Mean number of bounding boxes from RPN overlapping ground truth boxes: 43.8
+Classifier accuracy for bounding boxes from RPN: 0.878125
+Loss RPN classifier: 0.0328888137918
+Loss RPN regression: 0.0687107087672
+Loss Classifier classifier: 0.320043407977
+Loss Classifier regression: 0.213751565963
+Elapsed time: 66.8579440117
+Training complete, exiting.

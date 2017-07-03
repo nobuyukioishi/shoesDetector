@@ -15,6 +15,11 @@ from keras_frcnn import losses as losses
 from keras_frcnn import resnet as nn
 import keras_frcnn.roi_helpers as roi_helpers
 
+#running time estimation
+from datetime import datetime
+ground_start = datetime.now()
+print("start time: "+ str(ground_start))
+
 sys.setrecursionlimit(40000)
 
 parser = OptionParser()
@@ -69,7 +74,6 @@ if 'bg' not in classes_count:
 C.class_mapping = class_mapping
 
 inv_map = {v: k for k, v in class_mapping.iteritems()}
-
 print('Training images per class:')
 pprint.pprint(classes_count)
 print('Num classes (including bg) = {}'.format(len(classes_count)))
@@ -80,8 +84,17 @@ with open(config_output_filename, 'w') as config_f:
 	pickle.dump(C,config_f)
 	print('Config has been written to {}, and can be loaded when testing to ensure correct results'.format(config_output_filename))
 
-random.shuffle(all_imgs)
+# output config file to log
+import inspect
+print "==========="
+print "epochs: " + options.num_epochs
+print "===== config log start ======"
+for line in inspect.getmembers(C, lambda a:not(inspect.isroutine(a))):
+	print str(line[0]) + ": " + str(line[1]) 
+print "===== config log end ======"
 
+
+random.shuffle(all_imgs)
 num_imgs = len(all_imgs)
 
 train_imgs = [s for s in all_imgs if s['imageset'] == 'trainval']
@@ -261,3 +274,7 @@ while True:
 		print('Exception: {}'.format(e))
 		continue
 
+# estimate duration
+end_time = datetime.now()
+print("end time: "+ str(end_time))
+print('Duration: {}'.format(end_time - ground_start))
