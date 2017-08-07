@@ -10,7 +10,8 @@ from keras import backend as K
 from keras.optimizers import Adam
 from keras.layers import Input
 from keras.models import Model
-from keras_frcnn import config, data_generators
+# from keras_frcnn import config, data_generators  # comment out to set it from parse
+from keras_frcnn import data_generators
 from keras_frcnn import losses as losses
 from keras_frcnn import resnet as nn
 import keras_frcnn.roi_helpers as roi_helpers
@@ -34,11 +35,12 @@ parser.add_option("--vf", dest="vertical_flips", help="Augment with vertical fli
 parser.add_option("--rot", "--rot_90", dest="rot_90", help="Augment with 90 degree rotations in training. (Default=false).",
 				  action="store_true", default=False)
 parser.add_option("--num_epochs", dest="num_epochs", help="Number of epochs.", default=2000)
-parser.add_option("--output_config_filename", dest="config_filename", help=
+parser.add_option("--config_filename", dest="config_filename", help=
 				"Location to store all the metadata related to the training (to be used when testing).",
 				default="config.pickle")
 parser.add_option("--output_weight_path", dest="output_weight_path", help="Output path for weights.", default='./model_frcnn.hdf5')
 parser.add_option("--input_weight_path", dest="input_weight_path", help="Input path for weights. If not specified, will try to load default weights provided by keras.")
+parser.add_option("--load_config_filename", dest="load_config_filename", help="", default="config")
 
 (options, args) = parser.parse_args()
 
@@ -54,6 +56,10 @@ else:
 
 # pass the settings from the command line, and persist them in the config object
 C = config.Config()
+
+load_config_filename = options.load_config_filename
+# import config file from config file
+from keras_frcnn import load_config_filename as config
 
 C.num_rois = int(options.num_rois)
 C.use_horizontal_flips = bool(options.horizontal_flips)

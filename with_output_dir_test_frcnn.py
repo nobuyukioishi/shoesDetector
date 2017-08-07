@@ -11,15 +11,15 @@ from keras import backend as K
 from keras.layers import Input
 from keras.models import Model
 from keras_frcnn import roi_helpers
-
+import random
 sys.setrecursionlimit(40000)
-
+		
 parser = OptionParser()
 
 parser.add_option("-p", "--path", dest="test_path", help="Path to test data.")
 parser.add_option("-n", "--num_rois", dest="num_rois",
 				help="Number of ROIs per iteration. Higher means more memory use.", default=32)
-parser.add_option("--config_filename", dest="config_filename", help=
+parser.add_option("--output_config_filename", dest="config_filename", help=
 				"Location to read the metadata related to the training (generated when training).",
 				default="config.pickle")
 parser.add_option("--img_output", dest="img_out_path", help="Location to output the tested data images") 
@@ -76,8 +76,20 @@ class_mapping = {v: k for k, v in class_mapping.iteritems()}
 print "Class_mapping="
 print(class_mapping)
 
-colors = [(255,255,255),(255,0,0),(0,0,255),(0,0,255)]
-class_to_color = {class_mapping[v]: colors[index] for index, v in enumerate(class_mapping)}
+# set rectangle color for each object
+# colors = [(255,255,255),(255,0,0),(0,0,255),(0,0,255)]
+colors ={ 	'shoe'	 :	(0, 0,	255), 
+			'slipper':	(255,	0,	0),
+			'sandal' :	(0	, 255,	0),
+			'bg'	 :	(0	,	0,	0)
+		}
+# colors ={ 	'shoe'	 :	(255, 255,	255), 
+# 	'slipper':	(255,	0,	0),
+# 	'sandal' :	(0	, 255,	0),
+# 	'bg'	 :	(0	,	0,	0)
+# }
+# class_to_color = {class_mapping[v]: colors[index] for index, v in enumerate(class_mapping)}
+class_to_color = {class_mapping[v]: colors[class_mapping[v]] for index, v in enumerate(class_mapping)}
 # class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
 
 C.num_rois = int(options.num_rois)
@@ -118,7 +130,7 @@ all_imgs = []
 
 classes = {}
 
-bbox_threshold = 0.8
+bbox_threshold = 0.9
 
 visualise = True
 
@@ -202,7 +214,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 	all_dets = []
 	count = {'sandal' : 0,'slipper' : 0,'shoe' : 0,}
 
-	for key in bboxes:
+	for index, key in enumerate(bboxes):
 		print "key="
 		print key
 		bbox = np.array(bboxes[key])
@@ -211,7 +223,11 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 		for jk in range(new_boxes.shape[0]):
 			(x1, y1, x2, y2) = new_boxes[jk,:]
 
-			cv2.rectangle(img_scaled,(x1, y1), (x2, y2), class_to_color[key],2)
+			color_rand = list(class_to_color[key])
+			# color_rand[index] += random.randint(-100, 100)
+			print color_rand
+			
+			cv2.rectangle(img_scaled,(x1, y1), (x2, y2), color_rand,2)
 
 			textLabel = '{}: {}'.format(key,int(100*new_probs[jk]))
 			all_dets.append((key,100*new_probs[jk]))
