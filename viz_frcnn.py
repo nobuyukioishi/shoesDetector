@@ -38,6 +38,7 @@ config_output_filename = options.config_filename
 with open(config_output_filename, 'r') as f_in:
 	C = pickle.load(f_in)
 
+
 # turn off any data augmentation at test time
 C.use_horizontal_flips = False
 C.use_vertical_flips = False
@@ -75,9 +76,11 @@ class_mapping = C.class_mapping
 if 'bg' not in class_mapping:
 	class_mapping['bg'] = len(class_mapping)
 
-class_mapping = {v: k for k, v in class_mapping.iteritems()}
-print "Class_mapping="
-print(class_mapping)
+
+# print("class_mapping")
+# print(class_mapping)
+
+class_mapping = {v: k for k, v in class_mapping.items()}
 
 colors ={ 	'shoe'	 :	(0, 0,	255), 
 			'slipper':	(255,	0,	0),
@@ -87,7 +90,9 @@ colors ={ 	'shoe'	 :	(0, 0,	255),
 
 class_to_color = {class_mapping[v]: colors[class_mapping[v]] for index, v in enumerate(class_mapping)}
 
-C.num_rois = int(options.num_rois)
+
+# C.num_rois = int(options.num_rois)
+C.num_rois = 32
 
 if K.image_dim_ordering() == 'th':
 	input_shape_img = (3, None, None)
@@ -129,3 +134,4 @@ model_classifier.compile(optimizer='sgd', loss='mse')
 layer_dict = dict([(layer.name, layer) for layer in model_classifier.layers])
 
 print layer_dict
+

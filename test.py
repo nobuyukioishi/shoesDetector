@@ -1,9 +1,7 @@
+
 import os
 import numpy as np
 import cv2
-
-img = cv2.imread("data/lungCancer_frcnn/data/1_lung_cancer_only_cancer_labeled/shoesSamples/PNGImages/1_IMG28.jpg")
-
 
 
 # for validating result_imgs
