@@ -78,6 +78,14 @@ def get_data(input_path):
 					class_name = re.sub('\t', "", class_name)
 					class_name = re.sub('\n', "", class_name)
 					class_name = re.sub(' ', "",  class_name)
+					
+					# # for avoiding shoe
+					# if "shoe" in class_name:
+					# 	print("pass done!")
+					# 	continue
+					# print(class_name)
+					
+
 					if class_name not in classes_count:
 						classes_count[class_name] = 1
 					else:

@@ -76,7 +76,7 @@ class_mapping = {v: k for k, v in class_mapping.iteritems()}
 print "Class_mapping="
 print(class_mapping)
 
-colors = [(255,255,255),(255,0,0),(0,0,255),(0,0,255)]
+colors = [(255,255,255),(255,0,0),(0,0,255),(0,0,255),(100,100,100),(0,0,0)]
 class_to_color = {class_mapping[v]: colors[index] for index, v in enumerate(class_mapping)}
 # class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
 
@@ -141,7 +141,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 	img_scaled = img_scaled.astype(np.uint8)
 
 	if K.image_dim_ordering() == 'tf':
-		X = np.transpose(X, (0, 2, 3, 1))
+		X = npt.ranspose(X, (0, 2, 3, 1))
 
 	# get the feature maps and output from the RPN
 	[Y1, Y2, F] = model_rpn.predict(X)
@@ -200,7 +200,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 			probs[cls_name].append(np.max(P_cls[0, ii, :]))
 
 	all_dets = []
-	count = {'sandal' : 0,'slipper' : 0,'shoe' : 0,}
+	count = { 'non-cancer':0 , 'cancer': 0,'sandal' : 0,'slipper' : 0,'shoe' : 0}
 
 	for key in bboxes:
 		print "key="
