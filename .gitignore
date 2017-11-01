@@ -1,11 +1,11 @@
 *.pyc
 *.hdf5
-weights/
+weights/*
 *.h5
 .ipynb*
 ipynb_playground/*
 data/*
-7_6_for_mimamori_prez*
 keras-visualize-activations/*
 open_campus/*
 result_imgs_old/*
+results_for_school_events/*
