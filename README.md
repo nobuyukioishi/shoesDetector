@@ -1,6 +1,6 @@
 # Shoes Detection using Faster R-CNN
 
-We developed an application which detects different kinds of shoe such as a slipper, sandal and shoe.
+We developed an application which detects different kinds of shoewear such as a slipper, sandal and shoe.
 
 <img src="readme_files/shoe_detector_example.png" width="500px">
 
@@ -51,7 +51,7 @@ We developed an application which detects different kinds of shoe such as a slip
       <td align="right">1</td>    
       <td align="right">3</td>
       <td align="right">4</td>
-      <td>-</td>
+      <td align="center">-</td>
     </tr>
 </table>
 
