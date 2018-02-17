@@ -51,7 +51,7 @@ We developed an application which detects different kinds of shoe such as a slip
       <td align="right">1</td>    
       <td align="right">3</td>
       <td align="right">4</td>
-      <td>-</td>
+      <td align="center">-</td>
     </tr>
 </table>
 
