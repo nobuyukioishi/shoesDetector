@@ -2,11 +2,11 @@
 
 We developed an application which detects different kinds of shoe such as a slipper, sandal and shoe.
 
-![shoe detection example](readme_files/shoe_detector_example.png)
+<img src="readme_files/shoe_detector_example.png" width="500px">
 
 ## Execution Procedure
 
-![system configuration](readme_files/system_configuration.png)
+<img src="readme_files/system_configuration.png" width="500px">
 
 1. Take a picture of shoes and send it to the GPU machine every few seconds
 2. Count the number of each types of shoes in the picture and create a result image
