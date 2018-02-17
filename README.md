@@ -55,6 +55,13 @@ We developed an application which detects different kinds of shoe such as a slip
     </tr>
 </table>
 
+When BG (BackGround) is recognized as a shoe, it means that the program detected a shoe by mistake.
+
+When a shoe is recognized as BG, it means that the program missed the shoe.
+
+The result shows that our shoe detection model can detect shoes and classify them, yet it is not perfect.
+It seems that the program often fails to localize objects when multiple shoes are put close together or they are slanted.
+
 ## How to Use
 
 Egii, please fill in this part.
