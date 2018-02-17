@@ -8,6 +8,10 @@ We developed an application which detects different kinds of shoe such as a slip
 
 Write System Architecture or something.
 
+## Experimental Results
+
+Add some results like confusion matrix used in the poster we made for Chofusai.
+
 ## Folders
 We saved training, test images and annotations in *data/*.
 
