@@ -1,10 +1,16 @@
+# Shoes Detection using Faster R-CNN
+
+We developed an application which detects different kinds of shoe such as a slipper, sandal and shoe.
 
 ![shoe detection example](readme_files/shoe_detector_example.png)
 
-# Shoes Detector
-F-RFCNN for detecting 3 kind of objects(Sandal, shoes, slipper).
+## System Configuration
+
+Write System Architecture or something.
+
 ## Folders
 We saved training, test images and annotations in *data/*.
+
 ## Training and test
 We used *combo_master.py* to controls the slave script *train_frcnn.py* and *with_output_dir_test_frcnn.py*. As a result we can train multiple training and test phase in one run.
 ## Result
