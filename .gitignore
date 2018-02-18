@@ -10,3 +10,5 @@ open_campus/*
 result_imgs_old/*
 results_for_school_events/*
 .DS_Store
+.ipynb_checkpoints/
+.idea/
