@@ -57,16 +57,16 @@ We developed an application which detects different kinds of shoewear such as a 
 
 ## How to Use
 
-Egii, please fill in this part.
+We used raspi-3 as a shoes capturing camera. And jupyter notebook *shoes_detector.ipynb* as a shoe detector, result presenter. On raspi, we used *raspi_client.py* to take shoe picture for every second and send it to GPU-machine by TCP. On GPU-machine, we activate *shoes_detector.ipynb*'s recieve & detect script.
 
 ## Folders
 We saved training, test images and annotations in *data/*.
 
 ## Training and test
-We used *combo_master.py* to controls the slave script *train_frcnn.py* and *with_output_dir_test_frcnn.py*. As a result we can train multiple training and test phase in one run.
+We used *PhaseGenerator.py* to controls the slave script *train_frcnn.py* and *with_output_dir_test_frcnn.py*. As a result we can train multiple training and test phase in one run.
 
 ## Result
-combo_master.py's result for detecting test pictures are saved in *result_imgs/*. Also training log, best score weight are saved in *logs/* and *weights/*. Saving name *model_frcnn_X* have an index *X* which is the identity for log, weight, pickle file.
+PhaseGenerator.py's result for detecting test pictures are saved in *result_imgs/*. Also training log, best score weight are saved in *logs/* and *weights/*. Saving name *model_frcnn_X* have an index *X* which is the identity for log, weight, pickle file.
 
 Example in file naming:
 

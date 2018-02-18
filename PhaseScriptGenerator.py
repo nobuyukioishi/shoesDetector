@@ -65,39 +65,10 @@ class PhaseScriptGenerator(object):
                 " --img_output imgs/" + weight_name
             )
 
-    def grid_search_rpn(self, number_epoch):
-        for config_num in range(1,8):
-            path = self.weight_path
-            num = sum(os.path.isfile(os.path.join(path, f)) for f in os.listdir(path))
-            # get weight, log name
-            weight_name = "model_frcnn_"+str(num)
-            os.system(
-                "python train_frcnn" + str(config_num) + ".py" +
-                " -p " + self.dataset_path +
-                " --num_epochs " + str(number_epoch) +
-                " --hf 1" +
-                " --vf 1" +
-                " --output_weight_path weights/" + weight_name + ".hdf5" +
-                " --output_config_filename configs/" + weight_name + ".pickle" +
-                # " --load_config_filename " + load_config_filename +
-                " >> logs/"+weight_name+".txt"
-                )
-            os.system("mkdir imgs/"+weight_name)
-            os.system(
-                "python with_output_dir_test_frcnn.py" +
-                " -p " + self.testset_path +
-                " --output_config_filename configs/" + weight_name + ".pickle" +
-                " --img_output imgs/"+ weight_name
-                )
-            
-            print("Test imgs: ", self.test_set_path)
-            print("Output path: ", "imgs/", weight_name)
-
-
        
 
-data_set_path = "data/3_only_slipper_in_sss/"
-test_set_path = "data/3_only_slipper_in_sss/shoesSamples/forTest/"
+data_set_path = "data/2_shoes/"
+test_set_path = "data/2_shoes/shoesSamples/forTest/"
 weight_path = "weights"
 
 
